@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ôn tập Lịch sử Đảng – Chương 1 (1930–1945)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap">
+<style>
+/* ============ BIẾN MÀU & NỀN TẢNG ============ */
+:root{
+  --red:#9B1C1C; --red-d:#7a1313; --gold:#C9A227; --gold-l:#E8D08A;
+  --bg:#FBF6EA; --card:#FFFDF8; --ink:#2b1f1c; --muted:#6b5a52; --line:#E6D9BD;
+  --accent-text:#9B1C1C; --ok:#1d7a3d; --ok-bg:#E3F4E8; --bad:#B3261E; --bad-bg:#FBE4E2;
+  --chip:#F4EAD0; --shadow:0 2px 10px rgba(80,40,20,.10);
+  --p0:#7a6a5c; --p1:#B3261E; --p2:#B8741A; --p3:#1f6f8b; --p4:#5b3f9c; --p5:#9B1C1C;
+  --font:"Be Vietnam Pro","Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+  --font-h:"Playfair Display","Times New Roman",Georgia,"Noto Serif",serif;
+}
+:root[data-theme="dark"]{
+  --bg:#171110; --card:#241a19; --ink:#f1e7d6; --muted:#bfae9c; --line:#4a3a33;
+  --accent-text:#f08a80; --red:#b02a2a; --red-d:#8f1f1f; --gold:#E2BF5A; --gold-l:#6b5a2a;
+  --ok:#6fd58d; --ok-bg:#16301f; --bad:#ff8f86; --bad-bg:#3a1c1a; --chip:#33262a;
+  --shadow:0 2px 12px rgba(0,0,0,.5);
+  --p0:#b3a393; --p1:#ff8f86; --p2:#f0b562; --p3:#6cc3e0; --p4:#b49cf0; --p5:#f08a80;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);line-height:1.6;font-size:16px;
+  background-image:radial-gradient(circle at 100% 0,rgba(201,162,39,.10),transparent 40%)}
+h1,h2,h3{font-family:var(--font-h);line-height:1.25;margin:0}
+button{font-family:inherit;font-size:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.wrap{max-width:980px;margin:0 auto;padding:0 14px}
+[hidden]{display:none!important}
+
+/* ============ THANH TRÊN ============ */
+header.top{position:sticky;top:0;z-index:50;background:var(--red);color:#fff;border-bottom:3px solid var(--gold);box-shadow:var(--shadow)}
+.top .row{display:flex;align-items:center;gap:10px;padding:8px 0}
+.brand{display:flex;align-items:center;gap:8px;font-family:var(--font-h);font-weight:700;font-size:1.05rem;flex:1;min-width:0}
+.brand svg{flex:none}
+.brand span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.iconbtn{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);color:#fff;border-radius:10px;min-width:44px;height:44px;padding:0 10px}
+.iconbtn:hover{background:rgba(255,255,255,.26)}
+nav.tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding-bottom:8px}
+nav.tabs button{background:transparent;border:0;color:#fff;padding:8px 4px;border-radius:10px;font-weight:600;font-size:.86rem;min-height:44px;opacity:.9}
+nav.tabs button:hover{background:rgba(255,255,255,.14)}
+nav.tabs button[aria-selected="true"]{background:var(--bg);color:var(--red);opacity:1}
+:root[data-theme="dark"] nav.tabs button[aria-selected="true"]{color:#f08a80}
+nav.tabs .ic{display:block;font-size:1.15rem;line-height:1.2}
+main{padding:18px 0 60px}
+.panel{animation:fade .25s ease}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* ============ THẺ & NÚT ============ */
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:16px}
+.btn{background:var(--red);color:#fff;border:2px solid var(--red);border-radius:12px;padding:10px 18px;font-weight:600;min-height:44px;transition:transform .15s,background .15s}
+.btn:hover{background:var(--red-d);transform:translateY(-1px)}
+.btn.alt{background:transparent;color:var(--accent-text);border-color:var(--accent-text)}
+.btn.alt:hover{background:var(--chip)}
+.btn.gold{background:var(--gold);border-color:var(--gold);color:#2b1f1c}
+.btn.sm{padding:6px 12px;min-height:38px;font-size:.9rem}
+.btn[disabled]{opacity:.45;cursor:not-allowed;transform:none}
+.chip{background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:.9rem;min-height:38px}
+.chip[aria-pressed="true"]{background:var(--red);border-color:var(--red);color:#fff}
+.bar{height:10px;background:var(--chip);border-radius:999px;overflow:hidden;border:1px solid var(--line)}
+.bar>i{display:block;height:100%;background:linear-gradient(90deg,var(--red),var(--gold));border-radius:999px;transition:width .4s}
+.muted{color:var(--muted)}
+.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:999px;z-index:200;box-shadow:var(--shadow);font-size:.92rem}
+
+/* ============ TRANG CHỦ ============ */
+.hero{text-align:center;padding:26px 16px;border-radius:20px;background:linear-gradient(160deg,var(--red) 0%,#6d1010 100%);color:#fff;border:2px solid var(--gold);position:relative;overflow:hidden}
+.hero h1{font-size:clamp(1.4rem,5vw,2.2rem);margin:8px 0}
+.hero p{margin:6px auto;max-width:620px;opacity:.95}
+.hero .star{width:54px;height:54px}
+.hero .cta{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px}
+.hero .btn{background:var(--gold);border-color:var(--gold);color:#2b1f1c}
+.hero .btn.alt{background:transparent;color:#fff;border-color:#fff}
+.hero .btn.alt:hover{background:rgba(255,255,255,.15)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0}
+.stat{text-align:center}
+.stat b{display:block;font-family:var(--font-h);font-size:1.9rem;color:var(--accent-text)}
+.stat span{font-size:.88rem;color:var(--muted)}
+.hist li{display:flex;justify-content:space-between;gap:8px;padding:6px 0;border-bottom:1px dashed var(--line);font-size:.92rem}
+.hist{list-style:none;padding:0;margin:8px 0 0}
+
+/* ============ NỘI DUNG TRỌNG TÂM ============ */
+.toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:12px}
+.toolbar input[type=search]{flex:1;min-width:180px;padding:10px 14px;border-radius:12px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:inherit;min-height:44px}
+details.sec{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--red);border-radius:14px;margin-bottom:12px;box-shadow:var(--shadow)}
+details.sec>summary{list-style:none;cursor:pointer;padding:14px 16px;display:flex;gap:12px;align-items:center;font-weight:600;min-height:48px}
+details.sec>summary::-webkit-details-marker{display:none}
+details.sec>summary::after{content:"▾";margin-left:auto;color:var(--accent-text);transition:transform .2s}
+details.sec[open]>summary::after{transform:rotate(180deg)}
+.badge{flex:none;width:36px;height:36px;border-radius:50%;background:var(--red);color:#fff;border:2px solid var(--gold);display:grid;place-items:center;font-family:var(--font-h);font-weight:700}
+.sec .ttl{display:block}
+.sec .sl{display:block;font-size:.8rem;color:var(--muted);font-weight:500}
+.sec .body{padding:2px 18px 16px;animation:fade .25s ease}
+.sec h4{margin:16px 0 4px;color:var(--accent-text);font-size:1rem;border-bottom:1px solid var(--line);padding-bottom:3px}
+.sec ul{margin:6px 0;padding-left:20px}
+.sec li{margin:4px 0}
+.tw{overflow-x:auto;margin:8px 0;border:1px solid var(--line);border-radius:10px;-webkit-overflow-scrolling:touch}
+.tw table{border-collapse:collapse;width:100%;min-width:520px;font-size:.92rem}
+.tw th{background:var(--red);color:#fff;text-align:left;padding:8px 10px}
+.tw td{padding:8px 10px;border-top:1px solid var(--line);vertical-align:top}
+.tw tr:nth-child(even) td{background:var(--chip)}
+mark{background:#ffe27a;color:#2b1f1c;border-radius:3px;padding:0 2px}
+
+/* ============ DÒNG THỜI GIAN ============ */
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;margin-bottom:14px;font-size:.85rem}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:12px;height:12px;border-radius:50%;display:inline-block}
+.tl{position:relative;margin:0;padding:0 0 0 26px;list-style:none}
+.tl::before{content:"";position:absolute;left:8px;top:0;bottom:0;width:3px;background:linear-gradient(var(--gold),var(--red));border-radius:3px}
+.tl li{position:relative;margin-bottom:10px}
+.tl li::before{content:"";position:absolute;left:-26px;top:16px;width:15px;height:15px;border-radius:50%;background:var(--c);border:3px solid var(--bg);box-shadow:0 0 0 2px var(--c)}
+.ev{width:100%;text-align:left;background:var(--card);border:1px solid var(--line);border-left:5px solid var(--c);border-radius:12px;padding:10px 14px;box-shadow:var(--shadow);transition:transform .15s}
+.ev:hover{transform:translateX(3px)}
+.ev .d{font-weight:700;color:var(--c);font-size:.92rem}
+.ev .t{display:block;font-weight:600}
+.ev .x{display:none;margin-top:8px;padding-top:8px;border-top:1px dashed var(--line);font-size:.93rem;color:var(--ink)}
+.ev[aria-expanded="true"] .x{display:block}
+.ph0{--c:var(--p0)}.ph1{--c:var(--p1)}.ph2{--c:var(--p2)}.ph3{--c:var(--p3)}.ph4{--c:var(--p4)}.ph5{--c:var(--p5)}
+
+/* ============ TRẮC NGHIỆM ============ */
+.qctl{display:flex;flex-direction:column;gap:10px;margin-bottom:12px}
+.qctl .line{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.qctl label{font-size:.85rem;color:var(--muted);margin-right:4px}
+.qctl select{padding:8px 10px;border-radius:10px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:inherit;min-height:40px}
+.qmeta{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px;font-size:.9rem}
+.pbadge{background:var(--chip);border:1px solid var(--gold);border-radius:999px;padding:2px 10px;font-size:.8rem;font-weight:600}
+.qtext{font-size:1.08rem;font-weight:600;margin:6px 0 14px}
+.opts{display:grid;gap:10px}
+.opt{display:flex;gap:12px;align-items:flex-start;text-align:left;width:100%;background:var(--card);border:2px solid var(--line);border-radius:12px;padding:12px 14px;min-height:52px;transition:border-color .15s,background .15s}
+.opt:hover:not([disabled]){border-color:var(--gold)}
+.opt .l{flex:none;width:30px;height:30px;border-radius:50%;background:var(--chip);display:grid;place-items:center;font-weight:700;font-size:.9rem}
+.opt.sel{border-color:var(--red);background:var(--chip)}
+.opt.ok{border-color:var(--ok);background:var(--ok-bg)}
+.opt.ok .l{background:var(--ok);color:#fff}
+.opt.bad{border-color:var(--bad);background:var(--bad-bg)}
+.opt.bad .l{background:var(--bad);color:#fff}
+.opt[disabled]{cursor:default}
+.fb{margin-top:12px;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--chip);font-size:.94rem}
+.fb.ok{border-color:var(--ok)}.fb.bad{border-color:var(--bad)}
+.navrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;align-items:center}
+.navrow .sp{flex:1}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(40px,1fr));gap:6px;margin-top:14px}
+.gcell{position:relative;min-height:40px;border-radius:8px;border:1.5px solid var(--line);background:var(--card);font-weight:600;font-size:.85rem}
+.gcell.ans{background:var(--chip);border-color:var(--red)}
+.gcell.ok{background:var(--ok-bg);border-color:var(--ok);color:var(--ok)}
+.gcell.bad{background:var(--bad-bg);border-color:var(--bad);color:var(--bad)}
+.gcell.blank{border-style:dashed}
+.gcell.cur{outline:3px solid var(--gold);outline-offset:1px}
+.gcell.mk::after{content:"🚩";position:absolute;top:-6px;right:-3px;font-size:.7rem}
+.timer{font-variant-numeric:tabular-nums;font-weight:700;color:var(--accent-text)}
+.ncount{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.res{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center}
+@media(max-width:560px){.res{grid-template-columns:1fr;justify-items:center;text-align:center}}
+.donut{width:150px;height:150px}
+.donut text{font-family:var(--font-h);font-weight:700;fill:var(--ink)}
+.rs{display:flex;gap:10px;flex-wrap:wrap}
+.rs div{background:var(--chip);border-radius:10px;padding:8px 14px;min-width:92px;text-align:center}
+.rs b{display:block;font-size:1.3rem}
+.wl{list-style:none;padding:0;margin:8px 0}
+.wl li{padding:10px 12px;border:1px solid var(--line);border-left:4px solid var(--bad);border-radius:10px;margin-bottom:8px;background:var(--card);font-size:.93rem}
+.fcw{perspective:1200px}
+.fc{display:grid;min-height:260px;transition:transform .5s;transform-style:preserve-3d;cursor:pointer}
+.fc.flip{transform:rotateY(180deg)}
+.face{grid-area:1/1;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:var(--card);border:2px solid var(--gold);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+.face.back{transform:rotateY(180deg);background:var(--ok-bg);border-color:var(--ok);display:flex;flex-direction:column;justify-content:center}
+.face ol{margin:8px 0 0;padding-left:0;list-style:none;font-size:.93rem;color:var(--muted)}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.55);display:grid;place-items:center;z-index:300;padding:16px}
+.modal .box{background:var(--card);border-radius:16px;padding:20px;max-width:420px;width:100%;border:2px solid var(--gold)}
+.modal .acts{display:flex;gap:10px;justify-content:flex-end;margin-top:16px}
+footer{text-align:center;color:var(--muted);font-size:.8rem;padding:10px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* ============ IN ẤN ============ */
+@media print{
+  header.top,#tab-home,#tab-timeline,#tab-quiz,.toolbar,.toast,.modal,footer{display:none!important}
+  #tab-content{display:block!important}
+  body{background:#fff;color:#000;font-size:11pt}
+  details.sec{box-shadow:none;break-inside:avoid-page;border-color:#999}
+  .tw{overflow:visible}.tw table{min-width:0}
+  .tw th{background:#eee!important;color:#000;border:1px solid #999}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+ <div class="wrap">
+  <div class="row">
+   <div class="brand">
+    <svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><polygon fill="#E8C547" points="12,1.5 14.9,8.6 22.5,9.2 16.7,14.2 18.5,21.6 12,17.6 5.5,21.6 7.3,14.2 1.5,9.2 9.1,8.6"/></svg>
+    <span>Lịch sử Đảng · Chương 1</span>
+   </div>
+   <button class="iconbtn" id="themeBtn" aria-label="Chuyển chế độ sáng/tối" title="Sáng / Tối">🌙</button>
+  </div>
+  <nav class="tabs" role="tablist" aria-label="Điều hướng chính">
+   <button role="tab" id="t-home" data-tab="home" aria-selected="true" aria-controls="tab-home"><span class="ic">🏠</span>Trang chủ</button>
+   <button role="tab" id="t-content" data-tab="content" aria-selected="false" aria-controls="tab-content"><span class="ic">📖</span>Nội dung</button>
+   <button role="tab" id="t-timeline" data-tab="timeline" aria-selected="false" aria-controls="tab-timeline"><span class="ic">⏳</span>Thời gian</button>
+   <button role="tab" id="t-quiz" data-tab="quiz" aria-selected="false" aria-controls="tab-quiz"><span class="ic">✍️</span>Trắc nghiệm</button>
+  </nav>
+ </div>
+</header>
+
+<main class="wrap">
+ <section id="tab-home" class="panel" role="tabpanel" aria-labelledby="t-home"></section>
+
+ <section id="tab-content" class="panel" role="tabpanel" aria-labelledby="t-content" hidden>
+  <div class="toolbar">
+   <input type="search" id="search" placeholder="🔍 Tìm từ khóa trong nội dung…" aria-label="Tìm từ khóa trong nội dung">
+   <button class="btn sm alt" id="openAll">Mở tất cả</button>
+   <button class="btn sm alt" id="closeAll">Thu gọn tất cả</button>
+   <button class="btn sm" id="printBtn">🖨️ In</button>
+  </div>
+  <div id="searchInfo" class="muted" style="margin-bottom:8px;font-size:.9rem" aria-live="polite"></div>
+  <div id="secList"></div>
+ </section>
+
+ <section id="tab-timeline" class="panel" role="tabpanel" aria-labelledby="t-timeline" hidden>
+  <h2 style="margin-bottom:6px">Dòng thời gian 1858 → 2/9/1945</h2>
+  <p class="muted" style="margin-top:0">Bấm vào từng mốc để xem chi tiết.</p>
+  <div class="legend" id="legend"></div>
+  <ol class="tl" id="tl"></ol>
+ </section>
+
+ <section id="tab-quiz" class="panel" role="tabpanel" aria-labelledby="t-quiz" hidden>
+  <div id="quizRoot"></div>
+ </section>
+</main>
+<footer>Ôn tập Lịch sử Đảng Cộng sản Việt Nam · Chương 1 · Dữ liệu lưu trên thiết bị của bạn</footer>
+
+<div id="modal" class="modal" hidden role="dialog" aria-modal="true" aria-labelledby="mTxt">
+ <div class="box"><div id="mTxt"></div>
+  <div class="acts"><button class="btn alt sm" id="mNo">Hủy</button><button class="btn sm" id="mYes">Đồng ý</button></div>
+ </div>
+</div>
+
+<script>
+"use strict";
+/* =====================================================================
+   KHỐI DỮ LIỆU 1: NỘI DUNG TRỌNG TÂM A–F
+   Mỗi phần: id, title, sl (phạm vi slide), blocks = [loại, dữ liệu...]
+   loại: 'h' (tiêu đề nhỏ), 'ul' (danh sách), 'p' (đoạn), 'table' (đầu bảng, các hàng)
+   ===================================================================== */
+const SECTIONS = [
+{id:"A", title:"ĐCS Việt Nam ra đời & Cương lĩnh chính trị đầu tiên", sl:"Slide 1–31", blocks:[
+ ["h","Bối cảnh"],
+ ["ul",[
+  "CNTB chuyển sang độc quyền (đế quốc chủ nghĩa); phong trào vô sản và phong trào giải phóng dân tộc phát triển.",
+  "Cách mạng Tháng Mười Nga (1917), Quốc tế Cộng sản ra đời (3/1919)."]],
+ ["h","Việt Nam thành thuộc địa nửa phong kiến"],
+ ["ul",[
+  "Pháp tấn công Đà Nẵng <b>1/9/1858</b>; các hiệp ước 1862, 1874, 1883 (Harmand), 6/6/1884 (Patenôtre).",
+  "Chính sách “chia để trị”; khai thác thuộc địa lần 1 (1897–1914) và lần 2 (1919–1929); chính sách “ngu dân”."]],
+ ["table",["Hiệp ước","Năm"],[["Nhâm Tuất","1862"],["Giáp Tuất","1874"],["Harmand","1883"],["Patenôtre","6/6/1884"]]],
+ ["h","Giai cấp & mâu thuẫn"],
+ ["ul",[
+  "Nông dân chiếm hơn 90% dân số; công nhân xuất thân từ nông dân, ra đời trong khai thác thuộc địa.",
+  "Mâu thuẫn chủ yếu nhất: toàn thể dân tộc Việt Nam với thực dân Pháp và tay sai."]],
+ ["h","Các phong trào yêu nước thất bại"],
+ ["table",["Phong trào","Thời gian","Lãnh đạo / nội dung"],[
+  ["Cần Vương","1885–1896","Vua Hàm Nghi, Tôn Thất Thuyết"],
+  ["Yên Thế","1884–1913","Hoàng Hoa Thám"],
+  ["Đông Du","—","Phan Bội Châu"],
+  ["Duy Tân","—","Phan Chu Trinh"],
+  ["Việt Nam Quốc dân đảng","2/1930","Nguyễn Thái Học, khởi nghĩa Yên Bái"]]],
+ ["p","<b>Nguyên nhân thất bại:</b> thiếu đường lối đúng đắn, chưa giải quyết mâu thuẫn cơ bản, chưa tập hợp được toàn dân, phương pháp chưa thích hợp."],
+ ["h","Nguyễn Ái Quốc chuẩn bị"],
+ ["ul",[
+  "<b>1919:</b> Bản Yêu sách của Nhân dân An Nam.",
+  "<b>7/1920:</b> đọc Luận cương của Lênin.",
+  "<b>12/1920:</b> sáng lập Đảng CS Pháp.",
+  "<b>1921:</b> Hội Liên hiệp thuộc địa, báo Le Paria.",
+  "<b>1923:</b> đến Liên Xô.",
+  "<b>11/1924:</b> đến Quảng Châu. <b>6/1925:</b> Hội Việt Nam Cách mạng Thanh niên (tiền thân của Đảng), báo Thanh niên."]],
+ ["h","Năm 1929: ba tổ chức cộng sản ra đời"],
+ ["table",["Tổ chức","Thời gian"],[["Đông Dương Cộng sản Đảng","17/6/1929"],["An Nam Cộng sản Đảng","9/1929"],["Đông Dương Cộng sản Liên đoàn","11/1929"]]],
+ ["h","Hội nghị thành lập Đảng"],
+ ["ul",[
+  "Thời gian: <b>6/1–7/2/1930</b>; Nguyễn Ái Quốc chủ trì; lấy ngày <b>3/2</b> làm ngày kỷ niệm.",
+  "Thông qua Chánh cương vắn tắt, Sách lược vắn tắt, Chương trình tóm tắt, Điều lệ vắn tắt."]],
+ ["h","Cương lĩnh đầu tiên"],
+ ["ul",[
+  "Tư sản dân quyền cách mạng và thổ địa cách mạng để đi tới xã hội cộng sản.",
+  "Công nhân – nông dân là lực lượng cơ bản; bạo lực cách mạng; Đảng là đội tiên phong."]],
+ ["p","<b>Ý nghĩa:</b> kết hợp chủ nghĩa Mác – Lênin + phong trào công nhân + phong trào yêu nước; chấm dứt khủng hoảng đường lối cứu nước."]
+]},
+{id:"B", title:"Phong trào cách mạng 1930–1931 & Luận cương 10/1930", sl:"Slide 32–41", blocks:[
+ ["h","Bối cảnh"],
+ ["ul",["Khủng hoảng kinh tế 1929–1933; Pháp tăng bóc lột, khủng bố trắng sau Yên Bái."]],
+ ["h","Diễn biến"],
+ ["ul",[
+  "<b>1/5/1930:</b> phong trào mừng ngày Quốc tế Lao động; <b>6–8/1930:</b> tổng bãi công Bến Thủy – Vinh.",
+  "<b>12/9/1930:</b> Hưng Nguyên bị ném bom, 171 người chết.",
+  "Chính quyền Xô viết Nghệ – Tĩnh là đỉnh cao.",
+  "Cuối 1930–đầu 1931 Pháp đàn áp khốc liệt; 4/1931 toàn bộ BCH Trung ương bị bắt."]],
+ ["h","Hội nghị TW lần I (14–31/10/1930, Hương Cảng)"],
+ ["ul",["Đổi tên thành Đảng Cộng sản Đông Dương, Trần Phú làm Tổng Bí thư, thông qua Luận cương chính trị."]],
+ ["h","Luận cương 10/1930"],
+ ["ul",[
+  "Cách mạng tư sản dân quyền (thổ địa và phản đế) rồi đi thẳng lên XHCN.",
+  "Vô sản và nông dân là hai động lực chính; võ trang bạo động."]],
+ ["h","Hạn chế"],
+ ["ul",[
+  "Không nêu được mâu thuẫn cơ bản; đánh giá sai lực lượng (phủ nhận vai trò tiểu tư sản, tư sản dân tộc, địa chủ vừa và nhỏ).",
+  "Nguyên nhân: nhận thức chưa đầy đủ về thuộc địa; ảnh hưởng “tả khuynh” của Quốc tế Cộng sản."]]
+]},
+{id:"C", title:"Khôi phục tổ chức và phong trào (1931–1935)", sl:"Slide 41–46", blocks:[
+ ["ul",[
+  "<b>11/4/1931:</b> Quốc tế CS công nhận Đảng là chi bộ độc lập. <b>18/4/1931:</b> Trần Phú bị bắt (hy sinh 6/9/1931). <b>5/1931:</b> phê phán sai lầm “thanh Đảng” của Xứ ủy Trung Kỳ."]],
+ ["h","Đấu tranh trong tù"],
+ ["ul",[
+  "Lập chi bộ nhà tù (Hỏa Lò, Khám Lớn, Côn Đảo), chống khủng bố, huấn luyện đảng viên, ra báo bí mật.",
+  "Nguyễn Đức Cảnh viết tổng kết trong xà lim án chém; Lý Tự Trọng: “Con đường của thanh niên chỉ có thể là con đường cách mạng”."]],
+ ["h","Nguyễn Ái Quốc"],
+ ["ul",[
+  "<b>6/6/1931:</b> bị Anh bắt ở Hồng Kông (Tống Văn Sơ), được luật sư Francis Henry Loseby bào chữa.",
+  "Đầu 1934 ra tù, trở lại Quốc tế CS (Mátxcơva)."]],
+ ["h","Khôi phục tổ chức"],
+ ["ul",[
+  "1932: Chương trình hành động của Đảng (Lê Hồng Phong). Đầu 1934: Ban Chỉ huy ở ngoài của Đảng. Đầu 1935: hệ thống tổ chức được phục hồi."]],
+ ["h","Đại hội I (3/1935, Ma Cao, Trung Quốc)"],
+ ["ul",[
+  "Khẳng định cách mạng phản đế và điền địa gắn bó chặt chẽ, cùng đi với nhau.",
+  "Ba nhiệm vụ: củng cố và phát triển Đảng; đẩy mạnh vận động tập hợp quần chúng; tuyên truyền chống đế quốc, chống chiến tranh, ủng hộ Liên Xô."]]
+]},
+{id:"D", title:"Phong trào dân chủ 1936–1939", sl:"Slide 47–55", blocks:[
+ ["h","Bối cảnh"],
+ ["ul",[
+  "Nguy cơ chiến tranh, hình thành phe phát xít.",
+  "Đại hội VII Quốc tế CS (7/1935): kẻ thù nguy hiểm trước mắt là chủ nghĩa phát xít; lập mặt trận nhân dân rộng rãi. Lê Hồng Phong được bầu Ủy viên BCH Quốc tế CS.",
+  "Mặt trận nhân dân Pháp thắng cử 1936."]],
+ ["h","Hội nghị TW 26/7/1936 (Thượng Hải)"],
+ ["ul",[
+  "Lê Hồng Phong chủ trì, Hà Huy Tập làm Tổng Bí thư (8/1936–3/1938).",
+  "Chuyển hình thức: kết hợp công khai, nửa công khai, hợp pháp, nửa hợp pháp với bí mật, bất hợp pháp."]],
+ ["h","Nhiệm vụ & nhận thức mới"],
+ ["ul",[
+  "Nhiệm vụ trước mắt: chống phát xít, chống chiến tranh đế quốc, chống phản động thuộc địa và tay sai, đòi tự do, dân chủ, cơm áo, hòa bình.",
+  "Lập Mặt trận nhân dân phản đế rộng rãi.",
+  "Nhận thức mới: chọn địch nhân chính, nguy hiểm nhất mà đánh cho toàn thắng."]],
+ ["h","Phong trào"],
+ ["ul",[
+  "Ủy ban trù bị Đông Dương đại hội (đón Godard, Brévié đầu 1937, đưa “dân nguyện”); Hội truyền bá quốc ngữ.",
+  "Tranh cử Viện Dân biểu Bắc Kỳ, Trung Kỳ, Hội đồng quản hạt Nam Kỳ, Hội đồng kinh tế lý tài Đông Dương.",
+  "Hội nghị TW 29–30/3/1938: thành lập Mặt trận dân chủ Đông Dương, bầu Nguyễn Văn Cừ làm Tổng Bí thư. Đảng “tự chỉ trích”."]],
+ ["h","Kết thúc & kinh nghiệm"],
+ ["ul",[
+  "9/1939 Pháp đàn áp, Đảng rút vào bí mật.",
+  "Kinh nghiệm: giải quyết quan hệ mục tiêu chiến lược – mục tiêu trước mắt; xây dựng mặt trận thống nhất phù hợp; kết hợp tổ chức bí mật và công khai."]]
+]},
+{id:"E", title:"Phong trào giải phóng dân tộc 1939–1945", sl:"Slide 56–76", blocks:[
+ ["h","Bối cảnh"],
+ ["ul",[
+  "9/1939 Thế chiến II bùng nổ; 6/1940 Pháp đầu hàng Đức; 6/1941 Đức tấn công Liên Xô.",
+  "Toàn quyền Catroux ban lệnh thiết quân luật, “kinh tế chỉ huy”, đặt Đảng ra ngoài vòng pháp luật.",
+  "9/1940 Nhật vào Đông Dương, Pháp câu kết với Nhật: nhân dân chịu cảnh “một cổ hai tròng”."]],
+ ["h","Ba hội nghị chuyển hướng chiến lược"],
+ ["table",["Hội nghị","Thời gian – Địa điểm","Nội dung chính"],[
+  ["TW 6","11/1939, Bà Điểm (Hóc Môn, Gia Định)","Đặt quyền lợi dân tộc lên tối cao; rút vào bí mật; chuyển trọng tâm về nông thôn; lập Mặt trận dân tộc thống nhất phản đế Đông Dương"],
+  ["Cán bộ TW 7","11/1940, Đình Bảng (Từ Sơn, Bắc Ninh)","Chủ trương tiếp tục chuẩn bị; khẳng định cách mạng thổ địa gắn với phản đế"],
+  ["TW 8","5/1941, Pác Pó (Cao Bằng)","Hoàn chỉnh chuyển hướng chiến lược"]]],
+ ["p","<b>17/1/1940:</b> Tổng Bí thư Nguyễn Văn Cừ bị bắt."],
+ ["h","Hội nghị TW 8 (5/1941)"],
+ ["ul",[
+  "<b>28/1/1941:</b> Nguyễn Ái Quốc về nước.",
+  "Nhận định cách mạng trước mắt là cách mạng giải phóng dân tộc; Trường Chinh làm Tổng Bí thư.",
+  "Lập Mặt trận Việt Minh, khẩu hiệu: “Đoàn kết toàn dân, chống Nhật, chống Pháp, tranh lại độc lập; hoãn cách mạng ruộng đất”."]],
+ ["h","Sáu nội dung nổi bật của HN8"],
+ ["ul",[
+  "(1) Nhấn mạnh mâu thuẫn chủ yếu, cấp bách (dân tộc VN với phát xít Nhật – đế quốc Pháp).",
+  "(2) Khẳng định dứt khoát thay đổi chiến lược.",
+  "(3) Giải quyết vấn đề dân tộc trong khuôn khổ từng nước Đông Dương (“dân tộc tự quyết”).",
+  "(4) Tập hợp rộng rãi mọi lực lượng dân tộc.",
+  "(5) Chủ trương tổ chức sau cách mạng: lập chính phủ dân chủ cộng hòa, nhà nước tân dân chủ, nước Việt Nam Dân chủ Cộng hòa.",
+  "(6) Chuẩn bị khởi nghĩa vũ trang là nhiệm vụ trung tâm."]],
+ ["p","<b>Ý nghĩa:</b> khắc phục triệt để hạn chế của Luận cương 10/1930. Chuẩn bị khởi nghĩa vũ trang: khởi nghĩa từng phần tiến tới Tổng khởi nghĩa. Hồ Chí Minh dùng tên chính thức từ 1942, sau khi viết “Lịch sử nước ta” (bằng thơ)."],
+ ["h","Chuẩn bị lực lượng"],
+ ["ul",[
+  "Khởi nghĩa Bắc Sơn (9/1940), Nam Kỳ (11/1940), Binh biến Đô Lương (1/1941).",
+  "Nhiều lãnh đạo hy sinh (Hà Huy Tập, Nguyễn Văn Cừ, Võ Văn Tần, Nguyễn Thị Minh Khai, Lê Hồng Phong, Phan Đăng Lưu).",
+  "Việt Minh tuyên bố ra đời với chương trình mười chính sách.",
+  "Văn hóa: 1943 “Dân tộc, khoa học, đại chúng”; 1944 Hội Văn hóa cứu quốc Việt Nam.",
+  "Quân sự: Đội du kích Bắc Sơn → Cứu quốc quân; Đội tự vệ cứu quốc → Đội du kích; <b>22/12/1944</b> thành lập Đội Việt Nam Tuyên truyền Giải phóng quân.",
+  "Cuối 1943: chỉ thị “Sửa soạn khởi nghĩa”; 10/1944 chủ trương triệu tập Đại hội đại biểu quốc dân."]]
+]},
+{id:"F", title:"Cao trào kháng Nhật cứu nước & Tổng khởi nghĩa", sl:"Slide 73–84", blocks:[
+ ["h","Chỉ thị 12/3/1945"],
+ ["ul",[
+  "Ban Thường vụ TW họp ở Đình Bảng, ra chỉ thị “Nhật – Pháp bắn nhau và hành động của chúng ta” (Tổng Bí thư Trường Chinh).",
+  "Đây là cuộc đảo chính tranh giành lợi ích Nhật – Pháp; kẻ thù trước mắt và duy nhất là phát xít Nhật; khẩu hiệu “Đánh đuổi phát xít Nhật”.",
+  "Phát động cao trào kháng Nhật cứu nước, sẵn sàng Tổng khởi nghĩa khi có thời cơ."]],
+ ["h","Cao trào kháng Nhật"],
+ ["ul",[
+  "Du kích cục bộ, khởi nghĩa từng phần (Ba Tơ, Quảng Ngãi); Khu giải phóng Việt Bắc (4/6/1945).",
+  "Phong trào “Phá kho thóc Nhật, giải quyết nạn đói”; báo chí hoạt động công khai; lao tù vượt ngục."]],
+ ["h","Thời cơ"],
+ ["ul",[
+  "9/5/1945 Đức đầu hàng; Mỹ ném bom nguyên tử Hirosima, Nagasaki; Liên Xô đánh bại quân Quan Đông; 8/1945 Nhật đầu hàng.",
+  "Hội nghị Ianta (2/1945) và Pốtxđam (7/1945): quân Trung Hoa Dân quốc vào Bắc, quân Anh vào Nam vĩ tuyến 16.",
+  "Thời cơ giành chính quyền: từ khi Nhật đầu hàng Đồng minh đến trước khi quân Đồng minh vào Đông Dương (nửa cuối tháng 8/1945)."]],
+ ["h","Diễn biến"],
+ ["ul",[
+  "<b>13/8/1945:</b> thành lập Ủy ban khởi nghĩa toàn quốc; 23 giờ ra Quân lệnh số 1, phát lệnh Tổng khởi nghĩa.",
+  "<b>14–15/8/1945:</b> Hội nghị toàn quốc của Đảng ở Tân Trào. Khẩu hiệu “Phản đối xâm lược! Hoàn toàn độc lập! Chính quyền nhân dân!”. Nguyên tắc: tập trung, thống nhất, kịp thời. Chiếm ngay nơi chắc thắng; quân sự và chính trị kết hợp.",
+  "<b>16/8/1945:</b> Đại hội Quốc dân Tân Trào (60 đại biểu) thông qua 10 chính sách của Việt Minh, lập Ủy ban do Hồ Chí Minh làm Chủ tịch.",
+  "<b>2/9/1945:</b> Chủ tịch Hồ Chí Minh đọc Tuyên ngôn độc lập tại Ba Đình (Hà Nội)."]],
+ ["p","<b>Tính chất CMT8:</b> cách mạng giải phóng dân tộc điển hình, mang tính chất dân chủ mới."],
+ ["h","Ý nghĩa"],
+ ["ul",[
+  "Đập tan xiềng xích thực dân, chấm dứt chế độ phong kiến; đưa Việt Nam thành nước độc lập có chủ quyền.",
+  "Đảng trở thành Đảng cầm quyền; khẳng định sự sáng tạo của Đảng, góp phần làm tan rã chủ nghĩa đế quốc."]],
+ ["h","Bài học kinh nghiệm"],
+ ["ul",[
+  "<b>Chỉ đạo chiến lược:</b> giương cao cờ giải phóng dân tộc, giải quyết đúng hai nhiệm vụ độc lập dân tộc và ruộng đất.",
+  "<b>Xây dựng lực lượng:</b> liên minh công – nông – trí, khơi dậy tinh thần dân tộc.",
+  "<b>Phương pháp cách mạng:</b> kết hợp đấu tranh chính trị với quân sự.",
+  "<b>Xây dựng Đảng:</b> trung thành với lợi ích giai cấp và dân tộc, liên hệ chặt chẽ với quần chúng."]]
+]}
+];
+
+/* =====================================================================
+   KHỐI DỮ LIỆU 2: DÒNG THỜI GIAN
+   ph: 0 trước khi có Đảng | 1 1930–1931 | 2 1931–1935 | 3 1936–1939 | 4 1939–1945 | 5 Tổng khởi nghĩa
+   ===================================================================== */
+const PHASES = [
+ "Trước khi có Đảng (1858–1929)","1930–1931","1931–1935","1936–1939","1939–1945","Tổng khởi nghĩa (8/1945)"
+];
+const TIMELINE = [
+ {d:"1/9/1858",t:"Pháp nổ súng tấn công Đà Nẵng",x:"Mở đầu cuộc xâm lược; sau đó là các hiệp ước 1862 (Nhâm Tuất), 1874 (Giáp Tuất), 1883 (Harmand).",ph:0},
+ {d:"6/6/1884",t:"Hiệp ước Patenôtre",x:"Hoàn thành việc áp đặt ách thống trị; Việt Nam thành thuộc địa nửa phong kiến, thực hiện chính sách “chia để trị”.",ph:0},
+ {d:"1884–1913",t:"Khởi nghĩa Yên Thế",x:"Thủ lĩnh Hoàng Hoa Thám.",ph:0},
+ {d:"1885–1896",t:"Phong trào Cần Vương",x:"Vua Hàm Nghi, Tôn Thất Thuyết; mục tiêu đánh Pháp, khôi phục chế độ phong kiến độc lập.",ph:0},
+ {d:"1897–1914",t:"Khai thác thuộc địa lần thứ nhất",x:"Pháp khai thác thuộc địa lần 1, công nhân Việt Nam ra đời trong quá trình này.",ph:0},
+ {d:"Đầu thế kỷ XX (tài liệu không nêu năm)",t:"Phong trào Đông Du và Duy Tân",x:"Đông Du: Phan Bội Châu. Duy Tân: Phan Chu Trinh.",ph:0},
+ {d:"1917",t:"Cách mạng Tháng Mười Nga",x:"Mở ra thời đại mới; phong trào vô sản và giải phóng dân tộc phát triển.",ph:0},
+ {d:"3/1919",t:"Quốc tế Cộng sản ra đời",x:"Thành lập tại Mátxcơva.",ph:0},
+ {d:"1919",t:"Bản Yêu sách của Nhân dân An Nam",x:"Nguyễn Ái Quốc gửi tới Hội nghị Véc-xây.",ph:0},
+ {d:"1919–1929",t:"Khai thác thuộc địa lần thứ hai",x:"Pháp tăng cường đầu tư, khai thác; chính sách “ngu dân”.",ph:0},
+ {d:"7/1920",t:"Nguyễn Ái Quốc đọc Luận cương của Lênin",x:"Tìm thấy con đường cứu nước.",ph:0},
+ {d:"12/1920",t:"Sáng lập Đảng Cộng sản Pháp",x:"Nguyễn Ái Quốc tham gia sáng lập.",ph:0},
+ {d:"1921",t:"Hội Liên hiệp thuộc địa; báo Le Paria",x:"Hoạt động ở Pháp.",ph:0},
+ {d:"1923",t:"Nguyễn Ái Quốc đến Liên Xô",x:"Làm việc tại Quốc tế Cộng sản.",ph:0},
+ {d:"11/1924",t:"Nguyễn Ái Quốc đến Quảng Châu",x:"Chuẩn bị thành lập tổ chức cách mạng.",ph:0},
+ {d:"6/1925",t:"Hội Việt Nam Cách mạng Thanh niên",x:"Tiền thân của Đảng; báo Thanh niên truyền bá chủ nghĩa Mác – Lênin.",ph:0},
+ {d:"1929",t:"Ba tổ chức cộng sản ra đời",x:"Đông Dương Cộng sản Đảng (17/6), An Nam Cộng sản Đảng (9), Đông Dương Cộng sản Liên đoàn (11).",ph:0},
+ {d:"2/1930",t:"Khởi nghĩa Yên Bái",x:"Việt Nam Quốc dân đảng, Nguyễn Thái Học; thất bại.",ph:0},
+ {d:"6/1–7/2/1930",t:"Hội nghị thành lập Đảng",x:"Nguyễn Ái Quốc chủ trì; thông qua Chánh cương vắn tắt, Sách lược vắn tắt, Chương trình tóm tắt, Điều lệ vắn tắt. Lấy ngày 3/2 làm ngày kỷ niệm.",ph:1},
+ {d:"1/5/1930",t:"Phong trào Quốc tế Lao động",x:"Mở đầu cao trào 1930–1931.",ph:1},
+ {d:"6–8/1930",t:"Tổng bãi công Bến Thủy – Vinh",x:"Phong trào công nhân phát triển.",ph:1},
+ {d:"12/9/1930",t:"Hưng Nguyên bị ném bom",x:"171 người chết; chính quyền Xô viết Nghệ – Tĩnh là đỉnh cao của phong trào.",ph:1},
+ {d:"14–31/10/1930",t:"Hội nghị TW lần I (Hương Cảng)",x:"Đổi tên Đảng Cộng sản Đông Dương; Trần Phú làm Tổng Bí thư; thông qua Luận cương chính trị.",ph:1},
+ {d:"4/1931",t:"Toàn bộ BCH Trung ương bị bắt",x:"Pháp đàn áp khốc liệt.",ph:1},
+ {d:"11/4/1931",t:"Quốc tế CS công nhận Đảng là chi bộ độc lập",x:"",ph:2},
+ {d:"18/4/1931",t:"Trần Phú bị bắt",x:"Hy sinh ngày 6/9/1931.",ph:2},
+ {d:"5/1931",t:"Phê phán sai lầm “thanh Đảng”",x:"Của Xứ ủy Trung Kỳ.",ph:2},
+ {d:"6/6/1931",t:"Nguyễn Ái Quốc bị Anh bắt ở Hồng Kông",x:"Tống Văn Sơ; luật sư Francis Henry Loseby bào chữa. Đầu 1934 ra tù, trở lại Mátxcơva.",ph:2},
+ {d:"1932",t:"Chương trình hành động của Đảng",x:"Lê Hồng Phong.",ph:2},
+ {d:"Đầu 1934",t:"Ban Chỉ huy ở ngoài của Đảng",x:"Đầu 1935 hệ thống tổ chức được phục hồi.",ph:2},
+ {d:"3/1935",t:"Đại hội đại biểu lần thứ I (Ma Cao)",x:"Ba nhiệm vụ: củng cố và phát triển Đảng; vận động tập hợp quần chúng; tuyên truyền chống đế quốc, chống chiến tranh, ủng hộ Liên Xô.",ph:2},
+ {d:"7/1935",t:"Đại hội VII Quốc tế Cộng sản",x:"Kẻ thù nguy hiểm trước mắt là chủ nghĩa phát xít; Lê Hồng Phong được bầu Ủy viên BCH Quốc tế CS.",ph:3},
+ {d:"1936",t:"Mặt trận nhân dân Pháp thắng cử",x:"Đảng Cộng sản Pháp là nòng cốt.",ph:3},
+ {d:"26/7/1936",t:"Hội nghị TW (Thượng Hải)",x:"Lê Hồng Phong chủ trì; Hà Huy Tập làm Tổng Bí thư (8/1936–3/1938); kết hợp công khai, hợp pháp với bí mật.",ph:3},
+ {d:"Đầu 1937",t:"Đón Godard, Brévié",x:"Đưa “dân nguyện”; Ủy ban trù bị Đông Dương đại hội.",ph:3},
+ {d:"29–30/3/1938",t:"Hội nghị TW – Mặt trận dân chủ Đông Dương",x:"Bầu Nguyễn Văn Cừ làm Tổng Bí thư; Đảng “tự chỉ trích”.",ph:3},
+ {d:"9/1939",t:"Pháp đàn áp, Đảng rút vào bí mật",x:"Kết thúc phong trào dân chủ 1936–1939.",ph:3},
+ {d:"9/1939",t:"Thế chiến thứ hai bùng nổ",x:"",ph:4},
+ {d:"11/1939",t:"Hội nghị TW 6 (Bà Điểm, Hóc Môn, Gia Định)",x:"Đặt quyền lợi dân tộc lên tối cao; rút vào bí mật; chuyển trọng tâm về nông thôn; lập Mặt trận dân tộc thống nhất phản đế Đông Dương.",ph:4},
+ {d:"17/1/1940",t:"Tổng Bí thư Nguyễn Văn Cừ bị bắt",x:"",ph:4},
+ {d:"6/1940",t:"Pháp đầu hàng Đức",x:"",ph:4},
+ {d:"9/1940",t:"Nhật vào Đông Dương; khởi nghĩa Bắc Sơn",x:"Nhân dân chịu cảnh “một cổ hai tròng”.",ph:4},
+ {d:"11/1940",t:"Hội nghị Cán bộ TW 7 (Đình Bảng); khởi nghĩa Nam Kỳ",x:"Khẳng định cách mạng thổ địa gắn với phản đế.",ph:4},
+ {d:"1/1941",t:"Binh biến Đô Lương",x:"",ph:4},
+ {d:"28/1/1941",t:"Nguyễn Ái Quốc về nước",x:"",ph:4},
+ {d:"5/1941",t:"Hội nghị TW 8 (Pác Pó, Cao Bằng)",x:"Trường Chinh làm Tổng Bí thư; lập Mặt trận Việt Minh; chuẩn bị khởi nghĩa vũ trang là nhiệm vụ trung tâm.",ph:4},
+ {d:"6/1941",t:"Đức tấn công Liên Xô",x:"",ph:4},
+ {d:"1942",t:"Hồ Chí Minh dùng tên chính thức",x:"Sau khi viết “Lịch sử nước ta” (bằng thơ).",ph:4},
+ {d:"1943",t:"Đề cương văn hóa",x:"Ba nguyên tắc: dân tộc, khoa học, đại chúng. Cuối 1943: chỉ thị “Sửa soạn khởi nghĩa”.",ph:4},
+ {d:"1944",t:"Hội Văn hóa cứu quốc Việt Nam",x:"10/1944: chủ trương triệu tập Đại hội đại biểu quốc dân.",ph:4},
+ {d:"22/12/1944",t:"Đội Việt Nam Tuyên truyền Giải phóng quân",x:"Thành lập.",ph:4},
+ {d:"2/1945",t:"Hội nghị Ianta",x:"Mỹ ủng hộ để các thuộc địa dưới quyền ủy trị của “mẫu quốc”.",ph:4},
+ {d:"12/3/1945",t:"Chỉ thị “Nhật – Pháp bắn nhau và hành động của chúng ta”",x:"Đình Bảng; Tổng Bí thư Trường Chinh; kẻ thù trước mắt và duy nhất là phát xít Nhật; khẩu hiệu “Đánh đuổi phát xít Nhật”.",ph:4},
+ {d:"9/5/1945",t:"Đức đầu hàng",x:"",ph:4},
+ {d:"4/6/1945",t:"Khu giải phóng Việt Bắc",x:"Thành lập.",ph:4},
+ {d:"7/1945",t:"Hội nghị Pốtxđam",x:"Quân Trung Hoa Dân quốc vào Bắc, quân Anh vào Nam vĩ tuyến 16.",ph:4},
+ {d:"8/1945",t:"Nhật đầu hàng Đồng minh",x:"Mỹ ném bom nguyên tử Hirosima, Nagasaki; Liên Xô đánh bại quân Quan Đông. Thời cơ giành chính quyền xuất hiện.",ph:4},
+ {d:"13/8/1945",t:"Ủy ban khởi nghĩa toàn quốc; Quân lệnh số 1",x:"23 giờ phát lệnh Tổng khởi nghĩa.",ph:5},
+ {d:"14–15/8/1945",t:"Hội nghị toàn quốc của Đảng (Tân Trào)",x:"Khẩu hiệu “Phản đối xâm lược! Hoàn toàn độc lập! Chính quyền nhân dân!”; nguyên tắc tập trung, thống nhất, kịp thời.",ph:5},
+ {d:"16/8/1945",t:"Đại hội Quốc dân Tân Trào",x:"60 đại biểu; thông qua 10 chính sách của Việt Minh; lập Ủy ban do Hồ Chí Minh làm Chủ tịch.",ph:5},
+ {d:"2/9/1945",t:"Tuyên ngôn độc lập (Ba Đình, Hà Nội)",x:"Chủ tịch Hồ Chí Minh đọc; nước Việt Nam Dân chủ Cộng hòa ra đời; Đảng trở thành Đảng cầm quyền.",ph:5}
+];
+
+/* =====================================================================
+   KHỐI DỮ LIỆU 3: 130 CÂU TRẮC NGHIỆM
+   Mỗi phần tử: [id, câu hỏi, [A,B,C,D], chỉ số đáp án đúng (0=A,1=B,2=C,3=D), giải thích (tùy chọn)]
+   ===================================================================== */
+const RAW = [
+[1,"Nửa sau thế kỷ XIX, CNTB chuyển từ giai đoạn nào sang giai đoạn nào?",["Độc quyền → tự do cạnh tranh","Tự do cạnh tranh → độc quyền (chủ nghĩa đế quốc)","Phong kiến → tư bản","Tư bản → xã hội chủ nghĩa"],1],
+[2,"Quốc tế Cộng sản ra đời vào thời gian nào, ở đâu?",["3/1919, Mátxcơva","3/1917, Pari","11/1917, Pêtơrôgrát","6/1920, Béclin"],0],
+[3,"Hai phong trào lớn do mâu thuẫn của chủ nghĩa đế quốc là:",["Phong trào vô sản và phong trào giải phóng dân tộc","Phong trào nông dân và phong trào văn hóa","Phong trào tư sản và phong trào Cần Vương","Phong trào Đông Du và Duy Tân"],0],
+[4,"Pháp nổ súng tấn công Đà Nẵng ngày:",["1/9/1858","5/6/1862","25/8/1883","6/6/1884"],0],
+[5,"Hiệp ước ký ngày 6/6/1884 là:",["Nhâm Tuất","Giáp Tuất","Harmand","Patenôtre"],3],
+[6,"Chính sách chính trị của Pháp ở Việt Nam là:",["Hợp tác bình đẳng","Chia để trị","Khai hóa văn minh","Mở rộng dân chủ"],1],
+[7,"Hai cuộc khai thác thuộc địa của Pháp ở Việt Nam là:",["1858–1884 và 1885–1896","1897–1914 và 1919–1929","1900–1910 và 1911–1918","1919–1929 và 1930–1939"],1],
+[8,"Giai cấp chiếm hơn 90% dân số và chịu hai tầng bóc lột là:",["Công nhân","Tư sản","Nông dân","Tiểu tư sản"],2],
+[9,"Mâu thuẫn chủ yếu nhất trong xã hội Việt Nam thời thuộc địa là:",["Địa chủ với nông dân","Tư sản với công nhân","Toàn thể dân tộc Việt Nam với thực dân Pháp và phản động tay sai","Công nhân với địa chủ"],2],
+[10,"Đặc điểm của giai cấp công nhân Việt Nam là:",["Ra đời trước giai cấp địa chủ","Ít bị bóc lột","Chủ yếu xuất thân từ nông dân, ra đời trong cuộc khai thác thuộc địa","Chủ yếu xuất thân từ tư sản"],2],
+[11,"Phong trào Cần Vương (1885–1896) có mục tiêu:",["Thành lập nước cộng hòa dân quốc","Cải cách dân trí bằng con đường ôn hòa","Đánh Pháp, khôi phục chế độ phong kiến độc lập","Đưa thanh niên sang Nhật học"],2],
+[12,"Dụ Cần Vương được ban ở đâu, do ai đưa vua Hàm Nghi ra?",["Huế, do Phan Đình Phùng","Tân Sở (Quảng Trị), do Tôn Thất Thuyết","Yên Thế, do Hoàng Hoa Thám","Quảng Nam, do Phan Chu Trinh"],1],
+[13,"Thủ lĩnh tiêu biểu của khởi nghĩa Yên Thế là:",["Nguyễn Thái Học","Phan Bội Châu","Tôn Thất Thuyết","Hoàng Hoa Thám"],3],
+[14,"Phong trào Đông Du do ai khởi xướng?",["Phan Chu Trinh","Phan Bội Châu","Nguyễn Thái Học","Hoàng Hoa Thám"],1],
+[15,"Khẩu hiệu của phong trào Duy Tân (Phan Chu Trinh) là:",["“Đuổi hổ cửa trước, rước beo cửa sau”","“Khai dân trí, chấn dân khí, hậu dân sinh”","“Bạo động tắc tử”","“Đánh đuổi thực dân Pháp”"],1],
+[16,"Khởi nghĩa Yên Bái do tổ chức nào lãnh đạo, nổ ra khi nào?",["Việt Nam Quang phục Hội, 1913","Việt Nam Quốc dân đảng, 2/1930","Hội Duy Tân, 1908","Đông Dương Cộng sản Đảng, 1929"],1],
+[17,"Nguyên nhân thất bại chung của các phong trào yêu nước trước khi có Đảng là:",["Thiếu đường lối chính trị đúng đắn, chưa tập hợp được toàn dân tộc","Thiếu vũ khí hiện đại","Bị nhân dân phản đối","Không có lãnh tụ"],0],
+[18,"Năm 1919, Nguyễn Ái Quốc gửi tới Hội nghị Véc-xây văn kiện nào?",["Đường Kách mệnh","Bản Yêu sách của Nhân dân An Nam","Luận cương chính trị","Chánh cương vắn tắt"],1],
+[19,"Điều gì giúp Nguyễn Ái Quốc tìm thấy con đường cứu nước?",["Đọc Luận cương của Lênin về vấn đề dân tộc và thuộc địa","Tham gia Hội Duy Tân","Đọc Tân thư Trung Quốc","Dự lễ kỷ niệm Cách mạng Tân Hợi"],0],
+[20,"Năm 1923, Nguyễn Ái Quốc đến đâu làm việc tại Quốc tế Cộng sản?",["Quảng Châu","Pari","Liên Xô","Hương Cảng"],2],
+[21,"Hội Việt Nam Cách mạng Thanh niên (tiền thân của Đảng) thành lập:",["6/1925, Quảng Châu","2/1930, Hương Cảng","11/1924, Mátxcơva","6/1929, Hà Nội"],0],
+[22,"Tờ báo Nguyễn Ái Quốc xuất bản ở Quảng Châu để truyền bá chủ nghĩa Mác – Lênin là:",["Le Paria","Nhân đạo","Thanh niên","Đời sống công nhân"],2],
+[23,"Ba tổ chức cộng sản ra đời năm 1929 là:",["Đông Dương Cộng sản Đảng, An Nam Cộng sản Đảng, Đông Dương Cộng sản Liên đoàn","Việt Nam Quốc dân đảng, Tân Việt, Thanh niên","Cần Vương, Đông Du, Duy Tân","Đảng Xã hội, Đảng Cộng sản Pháp, Quốc tế III"],0],
+[24,"Hội nghị thành lập Đảng diễn ra:",["6/1 đến 7/2/1930","14 đến 31/10/1930","17/6 đến 11/1929","3/2 đến 18/4/1931"],0],
+[25,"Ai chủ trì Hội nghị thành lập Đảng với tư cách đại biểu của Quốc tế Cộng sản?",["Trần Phú","Trịnh Đình Cửu","Nguyễn Ái Quốc","Nguyễn Đức Cảnh"],2],
+[26,"Đảng quyết nghị lấy ngày nào làm ngày kỷ niệm thành lập Đảng?",["6/1","3/2","7/2","17/6"],1],
+[27,"Các văn kiện được thông qua tại Hội nghị thành lập Đảng gồm:",["Chánh cương vắn tắt, Sách lược vắn tắt, Chương trình tóm tắt, Điều lệ vắn tắt","Luận cương chính trị, Điều lệ Đảng","Yêu sách 8 điểm, Đường Kách mệnh","Bản án chế độ thực dân Pháp, Nhật ký chìm tàu"],0],
+[28,"Đường lối chiến lược của Cương lĩnh chính trị đầu tiên (2/1930) là:",["Làm cách mạng xã hội chủ nghĩa ngay","Làm tư sản dân quyền cách mạng và thổ địa cách mạng để đi tới xã hội cộng sản","Làm cách mạng tư sản kiểu cũ","Cải cách trong khuôn khổ thuộc địa"],1],
+[29,"Lực lượng cơ bản của cách mạng theo Cương lĩnh đầu tiên là:",["Tư sản và địa chủ","Tiểu tư sản và trí thức","Công nhân và nông dân (công nhân lãnh đạo)","Binh lính và sinh viên"],2],
+[30,"Cương lĩnh chính trị đầu tiên là sản phẩm của sự kết hợp:",["Chủ nghĩa Mác – Lênin + phong trào công nhân + phong trào yêu nước","Chủ nghĩa Tam dân + Duy Tân + Đông Du","Nho giáo + Cần Vương + phong trào nông dân","Cách mạng Pháp + Duy Tân Nhật Bản + Tân Hợi"],0],
+[31,"Biểu tình nông dân Hưng Nguyên (12/9/1930) bị Pháp ném bom làm chết:",["71 người","121 người","171 người","271 người"],2],
+[32,"Đỉnh cao của phong trào cách mạng 1930–1931 là:",["Tổng bãi công Bến Thủy – Vinh","Chính quyền Xô viết ở Nghệ An, Hà Tĩnh","Biểu tình ngày 1/5/1930","Khởi nghĩa Yên Bái"],1],
+[33,"Hội nghị BCH TW lần thứ nhất (10/1930) họp ở đâu, ai là Tổng Bí thư?",["Quảng Châu, Nguyễn Ái Quốc","Hương Cảng (Trung Quốc), Trần Phú","Mátxcơva, Trần Phú","Hà Nội, Trịnh Đình Cửu"],1],
+[34,"Điểm nào KHÔNG phải hạn chế của Luận cương chính trị (10/1930)?",["Không nêu được mâu thuẫn cơ bản nên xác định nhiệm vụ chưa đúng","Phủ nhận vai trò của tiểu tư sản, tư sản dân tộc","Chịu ảnh hưởng “tả khuynh” của Quốc tế Cộng sản","Xác định đúng mâu thuẫn chủ yếu là toàn dân tộc với đế quốc và tay sai"],3],
+[35,"Sự kiện ngày 11/4/1931 là:",["Trần Phú bị bắt","Quốc tế Cộng sản công nhận Đảng là chi bộ độc lập","Trần Phú hy sinh","Toàn bộ BCH Trung ương bị bắt"],1],
+[36,"Nguyễn Ái Quốc bị chính quyền Anh bắt ở Hồng Kông vào ngày:",["6/6/1930","6/6/1931","18/4/1931","3/2/1931"],1],
+[37,"Luật sư người Anh bào chữa cho Nguyễn Ái Quốc ở Hồng Kông là:",["Tống Văn Sơ","Francis Henry Loseby","Godard","Brévié"],1],
+[38,"Chương trình hành động của Đảng (1932) gắn với tên tuổi đồng chí nào?",["Trần Phú","Hà Huy Tập","Lê Hồng Phong","Nguyễn Văn Cừ"],2],
+[39,"Đại hội đại biểu lần thứ I của Đảng Cộng sản Đông Dương họp vào:",["10/1930, Hương Cảng","3/1935, Ma Cao (Trung Quốc)","7/1936, Thượng Hải","5/1941, Pác Pó"],1],
+[40,"Ba nhiệm vụ trước mắt của Đại hội I (1935) KHÔNG gồm:",["Củng cố và phát triển Đảng","Đẩy mạnh vận động tập hợp quần chúng","Tuyên truyền chống đế quốc, chống chiến tranh, ủng hộ Liên Xô","Phát động Tổng khởi nghĩa giành chính quyền"],3],
+[41,"Đại hội VII Quốc tế Cộng sản (7/1935) xác định kẻ thù nguy hiểm trước mắt là:",["Chủ nghĩa thực dân cũ","Chủ nghĩa tư bản","Chủ nghĩa phát xít","Chế độ phong kiến"],2],
+[42,"Ai được bầu làm Ủy viên Ban Chấp hành Quốc tế Cộng sản tại Đại hội VII?",["Hà Huy Tập","Lê Hồng Phong","Nguyễn Văn Cừ","Trường Chinh"],1],
+[43,"Hội nghị BCH TW ngày 26/7/1936 họp ở:",["Hương Cảng","Ma Cao","Thượng Hải (Trung Quốc)","Bà Điểm"],2],
+[44,"Tổng Bí thư giai đoạn 8/1936–3/1938 là:",["Trần Phú","Lê Hồng Phong","Hà Huy Tập","Nguyễn Văn Cừ"],2],
+[45,"Hình thức đấu tranh của Đảng giai đoạn 1936–1939 là:",["Chỉ hoạt động bí mật, bất hợp pháp","Kết hợp công khai, nửa công khai, hợp pháp, nửa hợp pháp với bí mật, bất hợp pháp","Chỉ đấu tranh nghị trường","Chỉ khởi nghĩa vũ trang"],1],
+[46,"Nhiệm vụ trước mắt của cách mạng 1936–1939 là:",["Đánh đổ đế quốc, chia ruộng đất cho dân cày","Giành chính quyền bằng khởi nghĩa vũ trang","Chống phát xít, chống chiến tranh đế quốc, chống phản động thuộc địa, đòi tự do, dân chủ, cơm áo, hòa bình","Xây dựng chủ nghĩa xã hội"],2],
+[47,"Nhận thức mới của Đảng thời kỳ 1936–1939 là:",["Nhiệm vụ điền địa quan trọng hơn phản đế","Hai nhiệm vụ phản đế và điền địa phải làm đồng thời bằng mọi giá","Cần chọn kẻ thù chính, nguy hiểm nhất mà đánh cho toàn thắng","Chỉ tập trung đấu tranh với phong kiến"],2],
+[48,"Năm 1937, Đảng vận động quần chúng “đón rước”, đưa “dân nguyện” nhân dịp:",["Nhật vào Đông Dương","Godard đi kinh lý Đông Dương và Brévié nhận chức toàn quyền","Đức tấn công Liên Xô","Pháp đầu hàng Đức"],1],
+[49,"Tổ chức nào do Đảng thành lập 1938 nhằm xóa nạn mù chữ?",["Hội Văn hóa cứu quốc","Hội truyền bá quốc ngữ","Hội Liên hiệp thuộc địa","Hội Việt Nam Cách mạng Thanh niên"],1],
+[50,"Hội nghị TW 29–30/3/1938 có nội dung nổi bật nào?",["Thành lập Mặt trận dân chủ Đông Dương, bầu Nguyễn Văn Cừ làm Tổng Bí thư","Thành lập Mặt trận Việt Minh","Quyết định Tổng khởi nghĩa","Thông qua Luận cương chính trị"],0],
+[51,"Phong trào dân chủ 1936–1939 kết thúc khi:",["Đảng chủ động chấm dứt","9/1939 Pháp đàn áp, Đảng rút vào hoạt động bí mật","Nhật đảo chính Pháp","Cách mạng Tháng Tám thành công"],1],
+[52,"Thế chiến thứ hai bùng nổ vào:",["6/1940","6/1941","9/1939","3/1945"],2],
+[53,"Tháng 9/1940, sự kiện nào xảy ra ở Đông Dương dẫn tới cảnh “một cổ hai tròng”?",["Pháp đầu hàng Đức","Quân phiệt Nhật vào Đông Dương, Pháp đầu hàng và câu kết với Nhật","Nhật đảo chính Pháp","Đức tấn công Liên Xô"],1],
+[54,"Toàn quyền Đông Dương ban lệnh thiết quân luật, thực hiện “kinh tế chỉ huy” là:",["Brévié","Godard","Georges Catroux","Pétain"],2],
+[55,"Hội nghị BCH TW lần VI (11/1939) họp ở:",["Đình Bảng (Bắc Ninh)","Pác Pó (Cao Bằng)","Bà Điểm (Hóc Môn, Gia Định)","Tân Trào (Tuyên Quang)"],2],
+[56,"Nội dung nào KHÔNG thuộc Hội nghị TW 6 (11/1939)?",["Đặt quyền lợi dân tộc lên tối cao","Rút vào hoạt động bí mật","Chuyển trọng tâm công tác về nông thôn","Hoãn cách mạng ruộng đất, lập Mặt trận Việt Minh"],3],
+[57,"Hội nghị Cán bộ Trung ương lần VII (11/1940) họp ở:",["Đình Bảng (Từ Sơn, Bắc Ninh)","Pác Pó (Cao Bằng)","Bà Điểm (Hóc Môn)","Thượng Hải"],0],
+[58,"Ngày 28/1/1941, sự kiện nào xảy ra?",["Khởi nghĩa Bắc Sơn","Binh biến Đô Lương","Nguyễn Ái Quốc về nước","Thành lập Mặt trận Việt Minh"],2],
+[59,"Hội nghị BCH TW lần VIII (5/1941) họp ở Pác Pó (Cao Bằng) và bầu ai làm Tổng Bí thư?",["Nguyễn Văn Cừ","Hà Huy Tập","Trường Chinh","Lê Hồng Phong"],2],
+[60,"Hội nghị TW 8 xác định nhiệm vụ trước mắt của cách mạng Việt Nam là:",["Cách mạng ruộng đất","Cách mạng xã hội chủ nghĩa","Cách mạng giải phóng dân tộc","Cải cách ôn hòa"],2],
+[61,"Khẩu hiệu chính của Mặt trận Việt Minh là:",["“Đoàn kết toàn dân, chống Nhật, chống Pháp, tranh lại độc lập; hoãn cách mạng ruộng đất”","“Người cày có ruộng”","“Đánh đuổi phát xít Nhật”","“Phản đối xâm lược! Hoàn toàn độc lập! Chính quyền nhân dân!”"],0],
+[62,"Hội nghị TW 8 giải quyết vấn đề dân tộc trong khuôn khổ:",["Toàn Đông Dương thành một quốc gia","Từng nước Đông Dương, thi hành chính sách “dân tộc tự quyết”","Liên bang Đông Dương","Lệ thuộc vào Pháp"],1],
+[63,"Chủ trương tổ chức sau cách mạng thành công theo Hội nghị TW 8 là:",["Lập chế độ phong kiến mới","Lập chính phủ dân chủ cộng hòa, nhà nước tân dân chủ (nước Việt Nam Dân chủ Cộng hòa)","Thiết lập nhà nước xã hội chủ nghĩa","Trở lại chế độ quân chủ"],1],
+[64,"Nhiệm vụ trung tâm của toàn Đảng, toàn dân được Hội nghị TW 8 xác định là:",["Cải cách ruộng đất","Xây dựng chủ nghĩa xã hội","Chuẩn bị khởi nghĩa vũ trang","Đấu tranh nghị trường"],2],
+[65,"Hội nghị TW 8 có ý nghĩa gì đối với Luận cương 10/1930?",["Khẳng định hoàn toàn Luận cương","Khắc phục triệt để những hạn chế của Luận cương chính trị tháng 10/1930","Hủy bỏ Cương lĩnh 2/1930","Không liên quan"],1],
+[66,"Ba cuộc khởi nghĩa, binh biến 1940–1941 theo thứ tự là:",["Bắc Sơn (9/1940), Nam Kỳ (11/1940), Đô Lương (1/1941)","Nam Kỳ, Bắc Sơn, Đô Lương","Đô Lương, Bắc Sơn, Nam Kỳ","Bắc Sơn, Đô Lương, Nam Kỳ"],0],
+[67,"Hồ Chí Minh dùng tên chính thức từ năm 1942 sau khi viết tác phẩm nào?",["Đường Kách mệnh","Bản án chế độ thực dân Pháp","Lịch sử nước ta","Nhật ký trong tù"],2],
+[68,"Đội Việt Nam Tuyên truyền Giải phóng quân thành lập ngày:",["22/12/1943","22/12/1944","19/5/1941","12/3/1945"],1],
+[69,"Chỉ thị “Nhật – Pháp bắn nhau và hành động của chúng ta” ra ngày:",["9/3/1945","12/3/1945","14/8/1945","2/9/1945"],1],
+[70,"Theo chỉ thị 12/3/1945, kẻ thù chính, trước mắt và duy nhất của nhân dân Đông Dương là:",["Thực dân Pháp","Phong kiến tay sai","Phát xít Nhật","Quân Trung Hoa Dân quốc"],2],
+[71,"Khẩu hiệu mới trong chỉ thị 12/3/1945 là:",["“Đánh đuổi phát xít Nhật – Pháp”","“Đánh đuổi phát xít Nhật”","“Đánh đổ đế quốc Pháp”","“Người cày có ruộng”"],1],
+[72,"Khu giải phóng Việt Bắc được thành lập ngày:",["22/12/1944","12/3/1945","4/6/1945","16/8/1945"],2],
+[73,"Thời cơ giành chính quyền tồn tại trong khoảng:",["Từ 9/3/1945 đến 12/3/1945","Từ khi Đức đầu hàng đến khi Mỹ ném bom nguyên tử","Từ khi Nhật đầu hàng Đồng minh đến trước khi quân Đồng minh vào Đông Dương (nửa cuối tháng 8/1945)","Từ 2/9/1945 trở đi"],2],
+[74,"Theo Hội nghị Pốtxđam (7/1945), quân đội nước nào vào miền Bắc Việt Nam?",["Quân Liên hiệp Anh","Quân Trung Hoa Dân quốc","Quân Mỹ","Quân Liên Xô"],1],
+[75,"Quân lệnh số 1 phát lệnh Tổng khởi nghĩa cả nước vào lúc:",["12/8/1945","23 giờ ngày 13/8/1945","15/8/1945","16/8/1945"],1],
+[76,"Hội nghị toàn quốc của Đảng ở Tân Trào diễn ra ngày:",["12–13/8/1945","14–15/8/1945","16–17/8/1945","2/9/1945"],1],
+[77,"Nguyên tắc chỉ đạo khởi nghĩa tại Hội nghị toàn quốc (8/1945) là:",["Tập trung, thống nhất, kịp thời","Dài hạn, bền bỉ","Chờ quân Đồng minh vào","Chỉ đấu tranh chính trị"],0],
+[78,"Đại hội Quốc dân Tân Trào (16/8/1945) có nội dung nào?",["Thông qua 10 chính sách của Việt Minh, cử Hồ Chí Minh làm Chủ tịch","Tuyên bố Việt Nam độc lập","Thành lập Đội Việt Nam Tuyên truyền Giải phóng quân","Thông qua Luận cương chính trị"],0],
+[79,"Tuyên ngôn độc lập được Chủ tịch Hồ Chí Minh đọc tại Quảng trường Ba Đình vào ngày:",["19/8/1945","23/8/1945","2/9/1945","16/8/1945"],2],
+[80,"Tính chất của Cách mạng Tháng Tám 1945 là:",["Cách mạng xã hội chủ nghĩa","Cách mạng tư sản kiểu cũ","Cách mạng giải phóng dân tộc điển hình, mang tính chất dân chủ mới","Cách mạng ruộng đất"],2],
+[81,"Hiệp ước Nhâm Tuất được ký năm nào?",["1858","1862","1874","1883"],1],
+[82,"Hiệp ước Giáp Tuất được ký năm nào?",["1862","1874","1883","1884"],1],
+[83,"Hiệp ước Harmand được ký năm nào?",["1862","1874","1883","1884"],2],
+[84,"Sau các hiệp ước với Pháp, Việt Nam trở thành:",["Nước độc lập có chủ quyền","Một xứ thuộc địa, nhân dân là “vong quốc nô”","Nước đồng minh của Pháp","Nước bảo hộ trên danh nghĩa độc lập"],1],
+[85,"Chính sách văn hóa – xã hội “ngu dân” của Pháp thể hiện ở việc:",["Mở nhiều trường học cho dân bản xứ","Lập nhà tù nhiều hơn trường học, khuyến khích rượu cồn, thuốc phiện","Cho tự do báo chí","Xóa bỏ thuế thân"],1],
+[86,"Đặc điểm của giai cấp tư sản Việt Nam là:",["Ra đời sớm hơn công nhân","Ra đời muộn hơn công nhân, gồm tư sản mại bản và tư sản dân tộc","Chiếm hơn 90% dân số","Hoàn toàn thân Pháp"],1],
+[87,"Tầng lớp nào được slide nhận định là có “tinh thần cách mạng”?",["Địa chủ phong kiến","Tư sản mại bản","Tiểu tư sản và sĩ phu phong kiến","Quan lại triều đình"],2],
+[88,"Cuộc Duy Tân Nhật Bản diễn ra năm:",["1789","1868","1898","1911"],1],
+[89,"Cách mạng Tân Hợi (Trung Quốc) diễn ra năm:",["1898","1905","1911","1917"],2],
+[90,"Tôn chỉ của Việt Nam Quang phục Hội là:",["Vũ trang đánh đuổi thực dân Pháp, khôi phục Việt Nam, lập nước cộng hòa dân quốc Việt Nam","Cải cách ôn hòa, khai dân trí","Xây dựng chủ nghĩa xã hội","Khôi phục chế độ phong kiến"],0],
+[91,"Mục đích của phong trào Đông Du là:",["Đưa thanh niên sang Nhật học, đào tạo nhân tài chuẩn bị bạo động vũ trang","Học tập kỹ thuật để buôn bán","Xin Pháp trao trả độc lập","Mở trường dạy chữ quốc ngữ"],0],
+[92,"Câu “Đuổi hổ cửa trước, rước beo cửa sau” được dùng để nhận xét về:",["Phong trào Cần Vương","Phong trào Duy Tân","Phong trào Đông Du (dựa vào Nhật để đánh Pháp)","Khởi nghĩa Yên Thế"],2],
+[93,"Khởi nghĩa Yên Thế (1884–1913) có địa bàn ở:",["Quảng Nam","Nghệ An","Bắc Giang","Quảng Trị"],2],
+[94,"Câu “Bất bạo động, bạo động tắc tử” gắn với ai?",["Phan Bội Châu","Phan Chu Trinh","Nguyễn Thái Học","Hoàng Hoa Thám"],1],
+[95,"Phương pháp đấu tranh của Việt Nam Quốc dân đảng là:",["Đấu tranh chính trị hòa bình","Vũ trang theo lối manh động, ám sát cá nhân","Chiến tranh du kích lâu dài","Tổng khởi nghĩa toàn dân"],1],
+[96,"Nguyễn Ái Quốc nhấn mạnh: “Đảng muốn vững thì phải có … làm cốt”. Điền vào chỗ trống:",["Vũ khí","Tiền bạc","Chủ nghĩa","Quân đội"],2],
+[97,"Trong quá trình huấn luyện cán bộ, Nguyễn Ái Quốc gửi người đi học ở:",["Đại học Phương Đông (Liên Xô) và Trường quân sự Hoàng Phố (Trung Quốc)","Đại học Sorbonne (Pháp)","Đại học Tokyo (Nhật)","Đại học Oxford (Anh)"],0],
+[98,"Phong trào đấu tranh của công nhân năm 1928–1929 so với 1926–1927 tăng:",["1,5 lần","2,5 lần","3 lần","5 lần"],1],
+[99,"Hai đại biểu của An Nam Cộng sản Đảng dự Hội nghị thành lập Đảng là:",["Trịnh Đình Cửu, Nguyễn Đức Cảnh","Châu Văn Liêm, Nguyễn Thiệu","Trần Phú, Lê Hồng Phong","Hà Huy Tập, Nguyễn Văn Cừ"],1],
+[100,"Hai đại biểu của Đông Dương Cộng sản Đảng dự Hội nghị thành lập Đảng là:",["Trịnh Đình Cửu, Nguyễn Đức Cảnh","Châu Văn Liêm, Nguyễn Thiệu","Trần Phú, Lê Hồng Phong","Hà Huy Tập, Nguyễn Văn Cừ"],0],
+[101,"Trong năm điểm lớn Nguyễn Ái Quốc nêu ra tại Hội nghị thành lập Đảng, có nội dung:",["Định tên Đảng là Đảng Cộng sản Việt Nam","Định tên Đảng là Đảng Cộng sản Đông Dương","Phát động tổng khởi nghĩa","Thành lập Mặt trận Việt Minh"],0],
+[102,"Phương pháp cách mạng trong Cương lĩnh chính trị đầu tiên là:",["Cải lương, thỏa hiệp","Bạo lực cách mạng của quần chúng, không thỏa hiệp trong bất cứ hoàn cảnh nào","Ám sát cá nhân","Chỉ đấu tranh nghị trường"],1],
+[103,"Về kinh tế, Cương lĩnh đầu tiên chủ trương:",["Giữ nguyên sở hữu ruộng đất của đế quốc","Thâu hết ruộng đất của đế quốc chia cho dân cày nghèo, thi hành ngày làm tám giờ","Hợp tác kinh tế với Pháp","Xóa bỏ hoàn toàn mọi hình thức sở hữu"],1],
+[104,"Theo Luận cương (10/1930), động lực chính và mạnh của cách mạng là:",["Nông dân","Tiểu tư sản","Giai cấp vô sản","Tư sản dân tộc"],2],
+[105,"Luận cương (10/1930) xác định phương pháp cách mạng là:",["Đấu tranh hòa bình","Đấu tranh nghị trường","Võ trang bạo động","Ám sát cá nhân"],2],
+[106,"Ba nhà tù được nêu ở slide 42 là:",["Hỏa Lò (Hà Nội), Khám Lớn (Sài Gòn), Côn Đảo","Hỏa Lò, Chí Hòa, Phú Quốc","Hỏa Lò, Sơn La, Côn Đảo","Khám Lớn, Lao Bảo, Phú Quốc"],0],
+[107,"Câu “Con đường của thanh niên chỉ có thể là con đường cách mạng” là của ai?",["Nguyễn Đức Cảnh","Lý Tự Trọng","Trần Phú","Võ Văn Tần"],1],
+[108,"Ai viết bản tổng kết công tác vận động công nhân ngay trong xà lim án chém?",["Nguyễn Đức Cảnh","Lý Tự Trọng","Lê Hồng Phong","Hà Huy Tập"],0],
+[109,"Chi bộ nhà tù được thành lập nhằm:",["Đấu tranh chống khủng bố, huấn luyện đảng viên, biên soạn tài liệu, ra báo bí mật","Chuẩn bị tổng khởi nghĩa ngay","Thương lượng với nhà cầm quyền","Tổ chức vượt ngục hàng loạt"],0],
+[110,"Mặt trận nhân dân Pháp do đảng nào làm nòng cốt, giành thắng lợi trong Tổng tuyển cử 1936?",["Đảng Xã hội Pháp","Đảng Cộng sản Pháp","Đảng Dân chủ Pháp","Đảng Cộng hòa Pháp"],1],
+[111,"Hội nghị TW 26/7/1936 do ai chủ trì?",["Trần Phú","Lê Hồng Phong","Nguyễn Văn Cừ","Trường Chinh"],1],
+[112,"Các cơ quan nghị viện mà Đảng vận động tranh cử 1937–1938 gồm:",["Viện Dân biểu Bắc Kỳ, Trung Kỳ, Hội đồng quản hạt Nam Kỳ, Hội đồng kinh tế lý tài Đông Dương","Quốc hội Pháp","Hội đồng bộ trưởng","Quốc hội lâm thời"],0],
+[113,"Tại Hội nghị TW 6 (11/1939), Đảng chủ trương thành lập:",["Mặt trận dân chủ Đông Dương","Mặt trận dân tộc thống nhất phản đế Đông Dương","Mặt trận Việt Minh","Mặt trận Liên Việt"],1],
+[114,"Hội nghị TW 6 chuyển trọng tâm công tác về:",["Thành thị","Nông thôn (đồng thời vẫn chú trọng thành thị)","Rừng núi","Nước ngoài"],1],
+[115,"Hội nghị Cán bộ TW 7 (11/1940) nhấn mạnh:",["Cách mạng ruộng đất không còn quan trọng","Nếu không làm được cách mạng thổ địa thì cách mạng phản đế khó thành công","Hoãn hẳn cách mạng phản đế","Chuyển ngay sang xã hội chủ nghĩa"],1],
+[116,"Hội nghị TW 8 nhấn mạnh mâu thuẫn chủ yếu, cấp bách của thời kỳ này là mâu thuẫn giữa:",["Địa chủ và nông dân","Tư sản và công nhân","Dân tộc Việt Nam với phát xít Nhật và đế quốc Pháp","Phong kiến và nhân dân"],2],
+[117,"Hội nghị TW 8 chủ trương đặt quyền lợi nào dưới quyền lợi nào?",["Quyền lợi dân tộc dưới quyền lợi giai cấp","Quyền lợi bộ phận, giai cấp dưới sự sinh tử, tồn vong của quốc gia, dân tộc","Quyền lợi quốc tế trên hết","Quyền lợi cá nhân trên hết"],1],
+[118,"Các hội cứu quốc trong Mặt trận Việt Minh KHÔNG gồm:",["Công nhân cứu quốc, Nông dân cứu quốc","Thanh niên cứu quốc, Phụ nữ cứu quốc","Thiếu niên cứu quốc, Phụ lão cứu quốc","Địa chủ cứu quốc"],3],
+[119,"Đội du kích Bắc Sơn sau này phát triển thành:",["Việt Nam Tuyên truyền Giải phóng quân","Quân đội nhân dân Việt Nam","Cứu quốc quân","Đội tự vệ cứu quốc"],2],
+[120,"Cuối năm 1943, Đảng ra chỉ thị:",["“Sửa soạn khởi nghĩa”","“Tổng khởi nghĩa”","“Nhật – Pháp bắn nhau và hành động của chúng ta”","“Phá kho thóc Nhật”"],0],
+[121,"Đề cương văn hóa năm 1943 nêu ba nguyên tắc:",["Dân tộc, dân chủ, cộng hòa","Độc lập, tự do, hạnh phúc","Dân tộc, khoa học, đại chúng","Dân tộc, dân sinh, dân quyền"],2],
+[122,"Hội Văn hóa cứu quốc Việt Nam được thành lập năm:",["1943","1944","1945","1941"],1],
+[123,"Tại Hội nghị Ianta (2/1945), Mỹ ủng hộ đề nghị:",["Để các thuộc địa dưới quyền ủy trị của “mẫu quốc”","Trao trả độc lập ngay cho thuộc địa","Chia Đông Dương thành ba nước","Giao Đông Dương cho Trung Hoa"],0],
+[124,"Theo Hội nghị Pốtxđam, quân Anh vào Nam Việt Nam, giải giáp quân Nhật từ vĩ tuyến:",["13","14","15","16"],3],
+[125,"Ngày 9/5/1945 là ngày:",["Nhật đầu hàng","Đức đầu hàng","Mỹ ném bom nguyên tử","Liên Xô tấn công Nhật"],1],
+[126,"Sự kiện nào góp phần thúc đẩy Nhật đầu hàng 8/1945?",["Quân Anh đổ bộ","Mỹ ném bom nguyên tử xuống Hirosima, Nagasaki và Liên Xô đánh bại quân Quan Đông","Pháp tấn công Nhật","Trung Hoa Dân quốc tấn công Nhật"],1],
+[127,"Nguyên tắc chỉ đạo khởi nghĩa tại Hội nghị toàn quốc (14–15/8/1945) KHÔNG gồm:",["Chiếm ngay những nơi chắc thắng","Quân sự và chính trị kết hợp","Lập ủy ban nhân dân ở những nơi giành được chính quyền","Chờ quân Đồng minh vào rồi mới hành động"],3],
+[128,"Ý nghĩa của Cách mạng Tháng Tám 1945 KHÔNG gồm:",["Đập tan xiềng xích thực dân, chấm dứt chế độ phong kiến","Đưa Việt Nam trở thành nước độc lập có chủ quyền","Đảng trở thành Đảng cầm quyền","Hoàn thành cách mạng xã hội chủ nghĩa trên cả nước"],3],
+[129,"Bài học kinh nghiệm về chỉ đạo chiến lược của Cách mạng Tháng Tám là:",["Giương cao ngọn cờ giải phóng dân tộc, giải quyết đúng đắn hai nhiệm vụ độc lập dân tộc và cách mạng ruộng đất","Chỉ tập trung ruộng đất","Chỉ dựa vào lực lượng nước ngoài","Chỉ đấu tranh nghị trường"],0],
+[130,"Bài học kinh nghiệm về phương pháp cách mạng của Cách mạng Tháng Tám là:",["Kết hợp đấu tranh chính trị với quân sự, nắm vững bạo lực của quần chúng, tiến hành chiến tranh du kích cục bộ, từng phần tiến tới Tổng khởi nghĩa","Chỉ đấu tranh chính trị hòa bình","Chỉ dùng ám sát cá nhân","Chờ thời cơ từ bên ngoài"],0]
+];
+
+/* =====================================================================
+   XỬ LÝ DỮ LIỆU CÂU HỎI
+   ===================================================================== */
+// Phần của câu: I (1–35), II (36–80), III (81–105), IV (106–130)
+function partOf(id){ return id<=35?"I":id<=80?"II":id<=105?"III":"IV"; }
+// Gợi ý phần nội dung liên quan (theo nhóm câu) để nút “Xem nội dung liên quan”
+function secOf(id){
+  const R=[[1,30,"A"],[31,34,"B"],[35,40,"C"],[41,51,"D"],[52,67,"E"],[68,68,"E"],[69,80,"F"],
+           [81,103,"A"],[104,105,"B"],[106,109,"C"],[110,112,"D"],[113,122,"E"],[123,130,"F"]];
+  for(const r of R) if(id>=r[0]&&id<=r[1]) return r[2];
+  return "A";
+}
+const PART_LABEL={I:"Phần I (1–35)",II:"Phần II (36–80)",III:"Phần III (81–105)",IV:"Phần IV (106–130)",all:"Tất cả 130 câu"};
+const Q = RAW.map(r=>({id:r[0],q:r[1],o:r[2],a:r[3],e:r[4]||"",p:partOf(r[0]),sec:secOf(r[0])}));
+const QBY = {}; Q.forEach(q=>QBY[q.id]=q);
+
+/* =====================================================================
+   TIỆN ÍCH & LƯU TRỮ (mọi thao tác localStorage đều bọc try/catch)
+   ===================================================================== */
+const $=(s,r=document)=>r.querySelector(s);
+const $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const LET="ABCD";
+const fmt=t=>String(Math.floor(t/60)).padStart(2,"0")+":"+String(t%60).padStart(2,"0");
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+
+const store=(function(){
+  let ok=true; const mem={};
+  try{const k="__t";localStorage.setItem(k,"1");localStorage.removeItem(k);}catch(e){ok=false;}
+  return {
+    get(k){ try{ if(ok) return localStorage.getItem(k); }catch(e){} return k in mem?mem[k]:null; },
+    set(k,v){ try{ if(ok){localStorage.setItem(k,v);return;} }catch(e){} mem[k]=v; },
+    del(k){ try{ if(ok){localStorage.removeItem(k);return;} }catch(e){} delete mem[k]; }
+  };
+})();
+const KEY="onTapLichSuDang.ch1.v1";
+let P={done:{},wrong:{},mark:{},known:{},hist:[],theme:null,tab:"home"};
+try{ const raw=store.get(KEY); if(raw){ const o=JSON.parse(raw); if(o&&typeof o==="object") P=Object.assign(P,o);} }catch(e){}
+function save(){ try{ store.set(KEY,JSON.stringify(P)); }catch(e){} }
+
+let toastT=null;
+function toast(msg){
+  $$(".toast").forEach(n=>n.remove());
+  const d=document.createElement("div"); d.className="toast"; d.setAttribute("role","status"); d.textContent=msg;
+  document.body.appendChild(d); clearTimeout(toastT); toastT=setTimeout(()=>d.remove(),2200);
+}
+// Hộp xác nhận
+let modalCb=null;
+function ask(msg,okLabel,cb){
+  $("#mTxt").textContent=msg; $("#mYes").textContent=okLabel||"Đồng ý"; modalCb=cb;
+  $("#modal").hidden=false; $("#mYes").focus();
+}
+$("#mNo").onclick=()=>{ $("#modal").hidden=true; modalCb=null; };
+$("#mYes").onclick=()=>{ $("#modal").hidden=true; const f=modalCb; modalCb=null; if(f) f(); };
+
+/* =====================================================================
+   GIAO DIỆN SÁNG / TỐI
+   ===================================================================== */
+function applyTheme(t){
+  document.documentElement.setAttribute("data-theme",t);
+  $("#themeBtn").textContent = t==="dark"?"☀️":"🌙";
+}
+(function(){
+  let t=P.theme;
+  if(t!=="dark"&&t!=="light"){ t=(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches)?"dark":"light"; }
+  applyTheme(t);
+})();
+$("#themeBtn").onclick=()=>{
+  const cur=document.documentElement.getAttribute("data-theme");
+  const n=cur==="dark"?"light":"dark"; P.theme=n; save(); applyTheme(n);
+};
+
+/* =====================================================================
+   ĐIỀU HƯỚNG TAB
+   ===================================================================== */
+function showTab(name,noScroll){
+  ["home","content","timeline","quiz"].forEach(n=>{
+    $("#tab-"+n).hidden = n!==name;
+    $("#t-"+n).setAttribute("aria-selected", n===name?"true":"false");
+  });
+  P.tab=name; save();
+  if(name==="home") renderHome();
+  if(name==="quiz") renderQuiz();
+  if(!noScroll) window.scrollTo({top:0});
+}
+$$("nav.tabs button").forEach(b=>b.onclick=()=>showTab(b.dataset.tab));
+
+/* =====================================================================
+   TRANG CHỦ
+   ===================================================================== */
+function stats(){
+  const done=Object.keys(P.done).length, wrong=Object.keys(P.wrong).length;
+  return {done,wrong,pct:Math.round(done/Q.length*100),acc:done?Math.round((done-wrong)/done*100):0,marks:Object.keys(P.mark).length,known:Object.keys(P.known).length};
+}
+function renderHome(){
+  const s=stats();
+  const hist=P.hist.slice(0,5).map(h=>`<li><span>${esc(h.date)} · ${h.n} câu · ${esc(h.time)}</span><b>${h.score}/10 (${h.correct}/${h.n})</b></li>`).join("");
+  $("#tab-home").innerHTML=`
+   <div class="hero">
+    <svg class="star" viewBox="0 0 24 24" aria-hidden="true"><polygon fill="#E8C547" points="12,1.5 14.9,8.6 22.5,9.2 16.7,14.2 18.5,21.6 12,17.6 5.5,21.6 7.3,14.2 1.5,9.2 9.1,8.6"/></svg>
+    <h1>Lịch sử Đảng Cộng sản Việt Nam</h1>
+    <p><b>Chương 1:</b> Đảng Cộng sản Việt Nam ra đời và lãnh đạo đấu tranh giành chính quyền (1930–1945)</p>
+    <p style="font-size:.92rem">Tóm tắt trọng tâm 6 phần, dòng thời gian và ${Q.length} câu trắc nghiệm có đáp án.</p>
+    <div class="cta"><button class="btn" data-go="content">📖 Bắt đầu học</button><button class="btn alt" data-go="quiz">✍️ Làm trắc nghiệm</button></div>
+   </div>
+   <div class="stats">
+    <div class="card stat"><b>${Q.length}</b><span>Tổng số câu</span></div>
+    <div class="card stat"><b>${SECTIONS.length}</b><span>Phần nội dung (A–F)</span></div>
+    <div class="card stat"><b>${s.pct}%</b><span>Tiến độ ôn tập (${s.done}/${Q.length})</span></div>
+    <div class="card stat"><b>${s.done?s.acc+"%":"–"}</b><span>Độ chính xác</span></div>
+   </div>
+   <div class="card">
+    <div style="display:flex;justify-content:space-between;margin-bottom:6px"><b>Tiến độ ôn tập</b><span class="muted">${s.done}/${Q.length} câu đã làm</span></div>
+    <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${s.pct}"><i style="width:${s.pct}%"></i></div>
+    <p class="muted" style="margin:10px 0 0;font-size:.9rem">Câu sai cần xem lại: <b>${s.wrong}</b> · Câu đánh dấu: <b>${s.marks}</b> · Thẻ đã thuộc: <b>${s.known}</b></p>
+   </div>
+   <div class="card" style="margin-top:12px">
+    <b>Kết quả thi thử gần nhất</b>
+    ${hist?`<ul class="hist">${hist}</ul>`:`<p class="muted" style="margin:6px 0 0">Chưa có bài thi thử nào.</p>`}
+   </div>
+   <p style="text-align:center;margin-top:18px"><button class="btn alt sm" id="clearAll">🗑️ Xóa toàn bộ tiến độ</button></p>`;
+  $$("[data-go]",$("#tab-home")).forEach(b=>b.onclick=()=>showTab(b.dataset.go));
+  $("#clearAll").onclick=()=>ask("Xóa toàn bộ tiến độ (câu đã làm, câu sai, đánh dấu, thẻ đã thuộc, lịch sử thi)? Không thể hoàn tác.","Xóa hết",()=>{
+    const th=P.theme; P={done:{},wrong:{},mark:{},known:{},hist:[],theme:th,tab:"home"}; save(); stopTimer(); S.ses=null; S.stage="setup"; renderHome(); toast("Đã xóa tiến độ");
+  });
+}
+
+/* =====================================================================
+   NỘI DUNG TRỌNG TÂM (accordion + tìm kiếm tô sáng)
+   ===================================================================== */
+function blockHTML(b){
+  if(b[0]==="h") return `<h4>${b[1]}</h4>`;
+  if(b[0]==="p") return `<p>${b[1]}</p>`;
+  if(b[0]==="ul") return `<ul>${b[1].map(x=>`<li>${x}</li>`).join("")}</ul>`;
+  if(b[0]==="table") return `<div class="tw" tabindex="0" role="region" aria-label="Bảng"><table><thead><tr>${b[1].map(h=>`<th>${h}</th>`).join("")}</tr></thead><tbody>${b[2].map(r=>`<tr>${r.map(c=>`<td>${c}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+  return "";
+}
+const ORIG=[];
+function renderContent(){
+  $("#secList").innerHTML=SECTIONS.map(s=>`
+   <details class="sec" id="sec-${s.id}">
+    <summary><span class="badge">${s.id}</span><span><span class="ttl">${esc(s.title)}</span><span class="sl">${esc(s.sl)}</span></span></summary>
+    <div class="body">${s.blocks.map(blockHTML).join("")}</div>
+   </details>`).join("");
+  $$("#secList .body").forEach((el,i)=>ORIG[i]=el.innerHTML);
+}
+// chuẩn hóa bỏ dấu để tìm không phân biệt dấu/hoa thường (giữ ánh xạ vị trí)
+function normChar(ch){ return ch.normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/đ/g,"d").replace(/Đ/g,"d").toLowerCase(); }
+function highlightIn(root,kw){
+  const nk=Array.from(kw).map(normChar).join("");
+  if(!nk) return 0;
+  let count=0;
+  const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);
+  const nodes=[]; while(walker.nextNode()) nodes.push(walker.currentNode);
+  nodes.forEach(node=>{
+    const text=node.nodeValue; let norm="", map=[];
+    for(let i=0;i<text.length;i++){ const n=normChar(text[i]); for(let k=0;k<n.length;k++){norm+=n[k];map.push(i);} }
+    const ranges=[]; let from=0, pos;
+    while((pos=norm.indexOf(nk,from))>-1){
+      const s=map[pos], e=map[pos+nk.length-1]+1;
+      if(ranges.length&&s<ranges[ranges.length-1][1]) ranges[ranges.length-1][1]=Math.max(e,ranges[ranges.length-1][1]); else ranges.push([s,e]);
+      from=pos+nk.length;
+    }
+    if(!ranges.length) return;
+    const frag=document.createDocumentFragment(); let last=0;
+    ranges.forEach(([s,e])=>{
+      if(s>last) frag.appendChild(document.createTextNode(text.slice(last,s)));
+      const m=document.createElement("mark"); m.textContent=text.slice(s,e); frag.appendChild(m); last=e; count++;
+    });
+    if(last<text.length) frag.appendChild(document.createTextNode(text.slice(last)));
+    node.parentNode.replaceChild(frag,node);
+  });
+  return count;
+}
+function doSearch(){
+  const kw=$("#search").value.trim();
+  let total=0, secs=0;
+  $$("#secList .body").forEach((el,i)=>{
+    el.innerHTML=ORIG[i];
+    if(kw){
+      const c=highlightIn(el,kw);
+      if(c){ total+=c; secs++; el.parentElement.open=true; }
+    }
+  });
+  $("#searchInfo").textContent = kw ? (total?`Tìm thấy ${total} kết quả trong ${secs} phần.`:"Không tìm thấy kết quả.") : "";
+}
+let sT=null;
+$("#search").addEventListener("input",()=>{clearTimeout(sT);sT=setTimeout(doSearch,200);});
+$("#openAll").onclick=()=>$$("#secList details").forEach(d=>d.open=true);
+$("#closeAll").onclick=()=>$$("#secList details").forEach(d=>d.open=false);
+$("#printBtn").onclick=()=>{ window.print(); };
+// In: mở tất cả các phần, in xong trả về trạng thái cũ
+let openState=[];
+window.addEventListener("beforeprint",()=>{ openState=$$("#secList details").map(d=>d.open); $$("#secList details").forEach(d=>d.open=true); });
+window.addEventListener("afterprint",()=>{ $$("#secList details").forEach((d,i)=>d.open=!!openState[i]); });
+function gotoSection(id){
+  showTab("content",true);
+  const d=$("#sec-"+id); if(!d) return;
+  d.open=true; setTimeout(()=>d.scrollIntoView({behavior:"smooth",block:"start"}),60);
+}
+
+/* =====================================================================
+   DÒNG THỜI GIAN
+   ===================================================================== */
+function renderTimeline(){
+  $("#legend").innerHTML=PHASES.map((p,i)=>`<span><i class="ph${i}" style="background:var(--c)"></i>${esc(p)}</span>`).join("");
+  $("#tl").innerHTML=TIMELINE.map((e,i)=>`
+   <li class="ph${e.ph}">
+    <button class="ev" aria-expanded="false" aria-controls="ev${i}" data-i="${i}">
+     <span class="d">${esc(e.d)}</span><span class="t">${esc(e.t)}</span>
+     <span class="x" id="ev${i}">${e.x?esc(e.x):"<i class='muted'>Mốc sự kiện.</i>"}</span>
+    </button>
+   </li>`).join("");
+  $$("#tl .ev").forEach(b=>b.onclick=()=>b.setAttribute("aria-expanded",b.getAttribute("aria-expanded")==="true"?"false":"true"));
+}
+
+/* =====================================================================
+   TRẮC NGHIỆM
+   ===================================================================== */
+const S={filter:"all",mode:"practice",scope:"all",stage:"setup",ses:null,fl:{list:[],i:0,flip:false},timer:null,examN:20};
+
+function stopTimer(){ if(S.timer){clearInterval(S.timer);S.timer=null;} }
+function startTimer(){
+  stopTimer();
+  S.timer=setInterval(()=>{
+    const s=S.ses; if(!s||s.submitted||s.kind!=="exam") return;
+    s.t=Math.floor((Date.now()-s.t0)/1000);
+    const el=$("#timer"); if(el) el.textContent=fmt(s.t);
+  },1000);
+}
+function poolFor(f){ return Q.filter(q=>f==="all"||q.p===f); }
+function scoped(list,sc){
+  if(sc==="new") return list.filter(q=>!P.done[q.id]);
+  if(sc==="wrong") return list.filter(q=>P.wrong[q.id]);
+  if(sc==="mark") return list.filter(q=>P.mark[q.id]);
+  if(sc==="unk") return list.filter(q=>!P.known[q.id]);
+  return list;
+}
+// tạo “view” của câu hỏi: mỗi lựa chọn mang cờ c (đúng) nên trộn không làm lệch đáp án
+function mkView(q,shuf){
+  let opts=q.o.map((t,i)=>({t,c:i===q.a}));
+  if(shuf) opts=shuffle(opts);
+  return {id:q.id,p:q.p,q:q.q,o:opts,sec:q.sec,e:q.e};
+}
+function record(it,ok){
+  P.done[it.id]=1;
+  if(ok) delete P.wrong[it.id]; else P.wrong[it.id]=1;
+  save();
+}
+
+function leaveGuard(cb){
+  if(S.mode==="exam"&&S.stage==="run"&&S.ses&&!S.ses.submitted)
+    ask("Bài thi đang làm dở sẽ bị hủy. Bạn có chắc muốn rời đi?","Rời đi",cb);
+  else cb();
+}
+function setMode(m){
+  stopTimer(); S.mode=m; S.ses=null; S.stage="setup";
+  if(m==="practice"){ if(!["all","new","wrong","mark"].includes(S.scope)) S.scope="all"; startPractice(); }
+  else if(m==="flash"){ if(!["all","unk"].includes(S.scope)) S.scope="all"; buildFlash(); }
+  else { S.scope="all"; }
+  renderQuiz();
+}
+function startPractice(){
+  const list=scoped(poolFor(S.filter),S.scope);
+  S.ses = list.length ? {kind:"practice",items:list.map(q=>mkView(q,false)),idx:0,ans:[],submitted:false} : null;
+  S.stage="run";
+}
+function startExam(n,fromIds){
+  let base;
+  if(fromIds){ base=fromIds.map(id=>QBY[id]); }
+  else { const pool=poolFor(S.filter); base=shuffle(pool).slice(0,Math.min(n,pool.length)); }
+  S.ses={kind:"exam",items:base.map(q=>mkView(q,true)),idx:0,ans:[],submitted:false,t0:Date.now(),t:0,result:null};
+  S.stage="run"; startTimer(); renderQuiz();
+}
+function buildFlash(){
+  S.fl={list:scoped(poolFor(S.filter),S.scope),i:0,flip:false};
+}
+function submitExam(){
+  const s=S.ses; let c=0,w=0,b=0;
+  s.items.forEach((it,i)=>{
+    const a=s.ans[i];
+    if(a===undefined){b++;return;}
+    if(it.o[a].c){c++;record(it,true);} else {w++;record(it,false);}
+  });
+  s.t=Math.floor((Date.now()-s.t0)/1000);
+  const n=s.items.length, score=Math.round(c/n*100)/10;
+  s.submitted=true; s.result={c,w,b,n,score,time:s.t};
+  P.hist.unshift({date:new Date().toLocaleString("vi-VN",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"}),n,correct:c,wrong:w,blank:b,score,time:fmt(s.t),filter:S.filter});
+  P.hist=P.hist.slice(0,10); save(); stopTimer(); S.stage="result"; renderQuiz();
+}
+
+/* ---------- Dựng giao diện ---------- */
+function controlsHTML(){
+  const fs=["I","II","III","IV","all"].map(f=>`<button class="chip" data-act="filter" data-v="${f}" aria-pressed="${S.filter===f}">${f==="all"?"Tất cả 130":"Phần "+f}</button>`).join("");
+  const ms=[["practice","Luyện tập"],["exam","Thi thử"],["flash","Flashcard"]].map(m=>`<button class="chip" data-act="mode" data-v="${m[0]}" aria-pressed="${S.mode===m[0]}">${m[1]}</button>`).join("");
+  let sc="";
+  if(S.mode==="practice") sc=`<label for="scopeSel">Phạm vi:</label><select id="scopeSel" data-act="scope"><option value="all">Tất cả câu</option><option value="new">Chỉ câu chưa làm</option><option value="wrong">Chỉ câu làm sai</option><option value="mark">Chỉ câu đánh dấu</option></select>`;
+  if(S.mode==="flash") sc=`<label for="scopeSel">Phạm vi:</label><select id="scopeSel" data-act="scope"><option value="all">Tất cả thẻ</option><option value="unk">Chỉ thẻ chưa thuộc</option></select>`;
+  const pool=poolFor(S.filter), d=pool.filter(q=>P.done[q.id]).length, pct=Math.round(d/pool.length*100);
+  return `<div class="card qctl">
+   <div class="line"><label>Bộ câu:</label>${fs}</div>
+   <div class="line"><label>Chế độ:</label>${ms}</div>
+   ${sc?`<div class="line">${sc}</div>`:""}
+   <div><div style="display:flex;justify-content:space-between;font-size:.85rem" class="muted"><span>Tiến độ ${esc(PART_LABEL[S.filter])}</span><span>${d}/${pool.length}</span></div>
+   <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${pct}"><i style="width:${pct}%"></i></div></div>
+  </div>`;
+}
+function gridHTML(){
+  const s=S.ses;
+  return `<div class="grid" role="group" aria-label="Bảng số câu">`+s.items.map((it,i)=>{
+    const a=s.ans[i]; let c="gcell";
+    if(s.submitted){ c+= a===undefined?" blank": it.o[a].c?" ok":" bad"; }
+    else if(a!==undefined){ c+= s.kind==="practice"? (it.o[a].c?" ok":" bad"):" ans"; }
+    if(i===s.idx) c+=" cur";
+    if(P.mark[it.id]) c+=" mk";
+    return `<button class="${c}" data-act="goto" data-v="${i}" aria-label="Câu ${i+1}${P.mark[it.id]?", đã đánh dấu":""}">${i+1}</button>`;
+  }).join("")+`</div>
+  <p class="muted" style="font-size:.78rem;margin:8px 0 0">${s.kind==="exam"&&!s.submitted?"Ô viền đỏ: đã chọn · ":""}Xanh: đúng · Đỏ: sai · Nét đứt: bỏ trống · 🚩: đánh dấu xem lại</p>`;
+}
+function runHTML(){
+  const s=S.ses;
+  if(!s) return `<div class="card" style="text-align:center"><p>Không có câu nào trong phạm vi này.</p><p class="muted">Hãy đổi bộ câu hoặc phạm vi.</p></div>`;
+  const it=s.items[s.idx], n=s.items.length, a=s.ans[s.idx];
+  const reveal = s.submitted || (s.kind==="practice"&&a!==undefined);
+  const opts=it.o.map((o,i)=>{
+    let c="opt";
+    if(reveal){ if(o.c) c+=" ok"; else if(a===i) c+=" bad"; }
+    else if(a===i) c+=" sel";
+    return `<button class="${c}" role="radio" aria-checked="${a===i}" data-act="pick" data-v="${i}" ${reveal?"disabled":""}><span class="l">${LET[i]}</span><span>${esc(o.t)}</span></button>`;
+  }).join("");
+  let fb="";
+  if(reveal){
+    const ci=it.o.findIndex(o=>o.c);
+    let head;
+    if(a===undefined) head=`⚪ Bạn chưa trả lời. Đáp án đúng: <b>${LET[ci]}</b>.`;
+    else if(it.o[a].c) head=`✅ <b>Chính xác!</b>`;
+    else head=`❌ <b>Chưa đúng.</b> Đáp án đúng: <b>${LET[ci]}. ${esc(it.o[ci].t)}</b>`;
+    const sec=SECTIONS.find(x=>x.id===it.sec);
+    fb=`<div class="fb ${a!==undefined&&it.o[a].c?"ok":"bad"}" role="status">${head}
+      ${it.e?`<p style="margin:6px 0 0">${esc(it.e)}</p>`:""}
+      <p style="margin:6px 0 0" class="muted">Nội dung liên quan: <button class="btn alt sm" data-act="sec" data-v="${it.sec}" style="margin-left:4px">📖 Phần ${it.sec}${sec?" – "+esc(sec.title):""}</button></p></div>`;
+  }
+  const marked=!!P.mark[it.id];
+  let right="";
+  if(s.kind==="exam"&&!s.submitted) right=`<button class="btn gold sm" data-act="submit">📤 Nộp bài</button>`;
+  else if(s.kind==="exam"&&s.submitted) right=`<button class="btn sm" data-act="toResult">📊 Về kết quả</button>`;
+  else {
+    const dn=s.ans.filter(x=>x!==undefined).length, ok=s.items.filter((q,i)=>s.ans[i]!==undefined&&q.o[s.ans[i]].c).length;
+    right=`<span class="muted" style="font-size:.88rem">Đã làm ${dn}/${n} · đúng ${ok}</span>`;
+  }
+  const head = s.kind==="exam"
+    ? `<span><b>Câu ${s.idx+1}/${n}</b> <span class="pbadge">${PART_LABEL[it.p].split(" ")[0]} ${it.p}</span></span><span>${s.submitted?"Đã nộp · "+fmt(s.t):`⏱ <span class="timer" id="timer">${fmt(s.t)}</span>`}</span>`
+    : `<span><b>Câu ${it.id}</b> <span class="pbadge">Phần ${it.p}</span> <span class="muted">(${s.idx+1}/${n})</span></span><span class="muted">Phím tắt: 1–4 / A–D, ← →</span>`;
+  return `<div class="card">
+   <div class="qmeta">${head}</div>
+   <div class="qtext">${esc(it.q)}</div>
+   <div class="opts" role="radiogroup" aria-label="Các lựa chọn">${opts}</div>
+   ${fb}
+   <div class="navrow">
+    <button class="btn alt sm" data-act="prev" ${s.idx===0?"disabled":""}>← Câu trước</button>
+    <button class="btn alt sm" data-act="next" ${s.idx===n-1?"disabled":""}>Câu sau →</button>
+    <button class="btn alt sm" data-act="mark" aria-pressed="${marked}">${marked?"🚩 Bỏ đánh dấu":"🏳️ Đánh dấu"}</button>
+    <span class="sp"></span>${right}
+   </div>
+  </div>
+  <div class="card" style="margin-top:12px">${gridHTML()}</div>`;
+}
+function setupHTML(){
+  const pool=poolFor(S.filter).length;
+  const ns=[20,40,60,130].map(n=>`<button class="chip" data-act="exn" data-v="${n}" aria-pressed="${S.examN===n}">${n} câu${n>pool?` (tối đa ${pool})`:""}</button>`).join("");
+  const real=Math.min(S.examN,pool);
+  return `<div class="card">
+   <h2 style="font-size:1.2rem;margin-bottom:6px">Thi thử</h2>
+   <p class="muted" style="margin-top:0">Câu hỏi và thứ tự đáp án được trộn ngẫu nhiên. Chỉ chấm điểm khi bấm “Nộp bài”.</p>
+   <label class="muted" style="font-size:.85rem">Số câu:</label>
+   <div class="ncount">${ns}</div>
+   <p>Bộ câu: <b>${esc(PART_LABEL[S.filter])}</b> · Sẽ làm <b>${real}</b> câu.</p>
+   <button class="btn" data-act="startExam">▶ Bắt đầu thi</button>
+  </div>`;
+}
+function resultHTML(){
+  const s=S.ses, r=s.result, C=2*Math.PI*54;
+  const pc=r.c/r.n, pw=r.w/r.n;
+  const segs=`<circle cx="70" cy="70" r="54" fill="none" stroke="var(--line)" stroke-width="16"/>
+   <circle cx="70" cy="70" r="54" fill="none" stroke="var(--ok)" stroke-width="16" stroke-dasharray="${(pc*C).toFixed(2)} ${C.toFixed(2)}" transform="rotate(-90 70 70)"/>
+   <circle cx="70" cy="70" r="54" fill="none" stroke="var(--bad)" stroke-width="16" stroke-dasharray="${(pw*C).toFixed(2)} ${C.toFixed(2)}" stroke-dashoffset="${(-pc*C).toFixed(2)}" transform="rotate(-90 70 70)"/>`;
+  const wrongs=s.items.map((it,i)=>({it,i,a:s.ans[i]})).filter(x=>x.a!==undefined&&!x.it.o[x.a].c);
+  const blanks=s.items.filter((it,i)=>s.ans[i]===undefined).length;
+  const wl=wrongs.map(({it,i,a})=>{const ci=it.o.findIndex(o=>o.c);return `<li><b>Câu ${i+1} (#${it.id}):</b> ${esc(it.q)}<br><span style="color:var(--bad)">Bạn chọn: ${LET[a]}. ${esc(it.o[a].t)}</span><br><span style="color:var(--ok)">Đáp án: ${LET[ci]}. ${esc(it.o[ci].t)}</span></li>`;}).join("");
+  const nice=r.score>=8?"Rất tốt! 🎉":r.score>=5?"Khá ổn, cố gắng thêm nhé!":"Cần ôn lại thêm nhé!";
+  return `<div class="card">
+   <div class="res">
+    <svg class="donut" viewBox="0 0 140 140" role="img" aria-label="Biểu đồ tròn: ${r.c} đúng, ${r.w} sai, ${r.b} bỏ trống">${segs}<text x="70" y="78" text-anchor="middle" font-size="26">${r.score.toFixed(1)}</text><text x="70" y="96" text-anchor="middle" font-size="11" style="font-weight:500">/ 10</text></svg>
+    <div><h2 style="font-size:1.3rem">Kết quả: ${r.score.toFixed(1)}/10 — ${nice}</h2>
+     <div class="rs" style="margin-top:10px">
+      <div><b style="color:var(--ok)">${r.c}</b>Đúng</div><div><b style="color:var(--bad)">${r.w}</b>Sai</div><div><b>${r.b}</b>Bỏ trống</div><div><b>${fmt(r.time)}</b>Thời gian</div>
+     </div></div>
+   </div>
+   <div class="navrow" style="margin-top:16px">
+    <button class="btn" data-act="retryWrong" ${(wrongs.length+blanks)?"":"disabled"}>🔁 Làm lại các câu sai${blanks?" & bỏ trống":""} (${wrongs.length+blanks})</button>
+    <button class="btn alt" data-act="review">👁 Xem lại bài</button>
+    <button class="btn gold" data-act="newExam">🆕 Làm bài mới</button>
+   </div>
+  </div>
+  <div class="card" style="margin-top:12px"><b>Danh sách câu sai (${wrongs.length})</b>
+   ${wrongs.length?`<ul class="wl">${wl}</ul>`:`<p class="muted">Không có câu sai nào 👏</p>`}
+  </div>`;
+}
+function flashHTML(){
+  const f=S.fl;
+  if(!f.list.length) return `<div class="card" style="text-align:center"><p>Không có thẻ nào trong phạm vi này.</p></div>`;
+  const q=QBY[f.list[f.i].id], ci=q.a;
+  const known=!!P.known[q.id];
+  return `<div class="card">
+   <div class="qmeta"><span><b>Thẻ ${f.i+1}/${f.list.length}</b> <span class="pbadge">Câu ${q.id}</span> ${known?'<span class="pbadge">✔ Đã thuộc</span>':""}</span><span class="muted">Chạm thẻ / Space để lật</span></div>
+   <div class="fcw"><div class="fc ${f.flip?"flip":""}" data-act="flip" role="button" tabindex="0" aria-label="Lật thẻ">
+     <div class="face front" aria-hidden="${f.flip}"><div class="qtext">${esc(q.q)}</div><ol>${q.o.map((o,i)=>`<li><b>${LET[i]}.</b> ${esc(o)}</li>`).join("")}</ol></div>
+     <div class="face back" aria-hidden="${!f.flip}"><div class="muted" style="font-size:.85rem">Đáp án đúng</div><div class="qtext" style="color:var(--ok)">${LET[ci]}. ${esc(q.o[ci])}</div></div>
+   </div></div>
+   <div class="navrow">
+    <button class="btn alt sm" data-act="fprev">← Trước</button>
+    <button class="btn alt sm" data-act="fnext">Sau →</button>
+    <button class="btn alt sm" data-act="fshuf">🔀 Trộn thẻ</button>
+    <span class="sp"></span>
+    <button class="btn alt sm" data-act="unknown">✗ Chưa thuộc</button>
+    <button class="btn sm" data-act="known">✓ Đã thuộc</button>
+   </div>
+  </div>`;
+}
+function renderQuiz(){
+  const root=$("#quizRoot"); if(!root) return;
+  let h=controlsHTML();
+  if(S.mode==="practice") h+=runHTML();
+  else if(S.mode==="exam") h+= S.stage==="setup"?setupHTML(): S.stage==="result"?resultHTML():runHTML();
+  else h+=flashHTML();
+  root.innerHTML=h;
+  const sel=$("#scopeSel"); if(sel) sel.value=S.scope;
+}
+
+/* ---------- Xử lý sự kiện trắc nghiệm ---------- */
+function pick(oi){
+  const s=S.ses; if(!s||s.submitted) return;
+  const it=s.items[s.idx]; if(!it.o[oi]) return;
+  if(s.kind==="practice"){
+    if(s.ans[s.idx]!==undefined) return;
+    s.ans[s.idx]=oi; record(it,it.o[oi].c);
+  } else { s.ans[s.idx]=oi; }
+  renderQuiz();
+}
+function move(d){
+  const s=S.ses; if(!s) return;
+  const n=Math.max(0,Math.min(s.items.length-1,s.idx+d));
+  if(n!==s.idx){ s.idx=n; renderQuiz(); }
+}
+function flashMove(d){
+  const f=S.fl; if(!f.list.length) return;
+  f.i=(f.i+d+f.list.length)%f.list.length; f.flip=false; renderQuiz();
+}
+$("#quizRoot").addEventListener("change",e=>{
+  if(e.target.matches("[data-act=scope]")){ S.scope=e.target.value; setModeKeep(); }
+});
+function setModeKeep(){ // đổi phạm vi: dựng lại bộ câu nhưng giữ chế độ
+  stopTimer(); S.ses=null;
+  if(S.mode==="practice") startPractice(); else if(S.mode==="flash") buildFlash();
+  renderQuiz();
+}
+$("#quizRoot").addEventListener("click",e=>{
+  const t=e.target.closest("[data-act]"); if(!t||t.tagName==="SELECT") return;
+  const act=t.dataset.act, v=t.dataset.v;
+  switch(act){
+    case "filter": leaveGuard(()=>{ S.filter=v; stopTimer(); S.ses=null; S.stage="setup"; if(S.mode==="practice") startPractice(); else if(S.mode==="flash") buildFlash(); renderQuiz(); }); break;
+    case "mode": if(v!==S.mode) leaveGuard(()=>setMode(v)); break;
+    case "pick": pick(+v); break;
+    case "prev": move(-1); break;
+    case "next": move(1); break;
+    case "goto": S.ses.idx=+v; renderQuiz(); break;
+    case "mark": { const it=S.ses.items[S.ses.idx]; if(P.mark[it.id]) delete P.mark[it.id]; else P.mark[it.id]=1; save(); renderQuiz(); break; }
+    case "sec": gotoSection(v); break;
+    case "exn": S.examN=+v; renderQuiz(); break;
+    case "startExam": startExam(S.examN); break;
+    case "submit": {
+      const un=S.ses.items.length-S.ses.ans.filter(x=>x!==undefined).length;
+      ask(un?`Bạn còn ${un} câu chưa trả lời. Nộp bài ngay?`:"Nộp bài và chấm điểm?","Nộp bài",submitExam); break; }
+    case "toResult": S.stage="result"; renderQuiz(); break;
+    case "review": S.stage="run"; S.ses.idx=0; renderQuiz(); break;
+    case "newExam": S.ses=null; S.stage="setup"; renderQuiz(); break;
+    case "retryWrong": {
+      const s=S.ses, ids=[];
+      s.items.forEach((it,i)=>{ if(s.ans[i]===undefined||!it.o[s.ans[i]].c) ids.push(it.id); });
+      if(ids.length) startExam(0,ids); break; }
+    case "flip": S.fl.flip=!S.fl.flip; renderQuiz(); break;
+    case "fprev": flashMove(-1); break;
+    case "fnext": flashMove(1); break;
+    case "fshuf": S.fl.list=shuffle(S.fl.list); S.fl.i=0; S.fl.flip=false; renderQuiz(); break;
+    case "known": case "unknown": {
+      const id=S.fl.list[S.fl.i].id;
+      if(act==="known") P.known[id]=1; else delete P.known[id];
+      save(); flashMove(1); break; }
+  }
+});
+// Phím tắt: 1–4 / A–D chọn đáp án, ← → chuyển câu, Space/Enter lật thẻ
+document.addEventListener("keydown",e=>{
+  if(P.tab!=="quiz"||e.ctrlKey||e.metaKey||e.altKey||!$("#modal").hidden) return;
+  const tg=e.target; if(tg&&/^(INPUT|TEXTAREA|SELECT)$/.test(tg.tagName)) return;
+  if(S.mode==="flash"){
+    if(e.key==="ArrowRight"){flashMove(1);e.preventDefault();}
+    else if(e.key==="ArrowLeft"){flashMove(-1);e.preventDefault();}
+    else if((e.key===" "||e.key==="Enter")&&S.fl.list.length){S.fl.flip=!S.fl.flip;renderQuiz();e.preventDefault();}
+    return;
+  }
+  if(!S.ses||(S.mode==="exam"&&S.stage!=="run")) return;
+  const k=e.key.toLowerCase();
+  if("1234".includes(k)&&k.length===1){pick(+k-1);e.preventDefault();}
+  else if("abcd".includes(k)&&k.length===1){pick("abcd".indexOf(k));e.preventDefault();}
+  else if(e.key==="ArrowRight"){move(1);e.preventDefault();}
+  else if(e.key==="ArrowLeft"){move(-1);e.preventDefault();}
+});
+
+/* =====================================================================
+   KHỞI TẠO
+   ===================================================================== */
+renderContent();
+renderTimeline();
+startPractice();
+showTab(["home","content","timeline","quiz"].includes(P.tab)?P.tab:"home",true);
+</script>
+</body>
+</html>
